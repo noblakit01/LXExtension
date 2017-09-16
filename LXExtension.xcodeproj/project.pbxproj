@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		OBJ_21 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Date.swift */; };
-		OBJ_22 /* LXExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* LXExtension.swift */; };
 		OBJ_29 /* LXExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* LXExtensionTests.swift */; };
 		OBJ_31 /* LXExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* LXExtension.framework */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		OBJ_15 /* LXExtensionTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = LXExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_8 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		OBJ_9 /* LXExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* Date.swift */,
-				OBJ_9 /* LXExtension.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -165,7 +162,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_21 /* Date.swift in Sources */,
-				OBJ_22 /* LXExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

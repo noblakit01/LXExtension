@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F56E5CD1F6E97EB0071D57C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5CC1F6E97EB0071D57C /* UIView.swift */; };
 		0F56E5CF1F6E9A2B0071D57C /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */; };
+		0F56E5D11F6E9B6D0071D57C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */; };
 		OBJ_21 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Date.swift */; };
 		OBJ_29 /* LXExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* LXExtensionTests.swift */; };
 		OBJ_31 /* LXExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* LXExtension.framework */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		0F56E5CC1F6E97EB0071D57C /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		OBJ_12 /* LXExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXExtensionTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* LXExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LXExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_15 /* LXExtensionTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = LXExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				OBJ_8 /* Date.swift */,
 				0F56E5CC1F6E97EB0071D57C /* UIView.swift */,
 				0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */,
+				0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -168,6 +171,7 @@
 			files = (
 				0F56E5CD1F6E97EB0071D57C /* UIView.swift in Sources */,
 				OBJ_21 /* Date.swift in Sources */,
+				0F56E5D11F6E9B6D0071D57C /* UICollectionView.swift in Sources */,
 				0F56E5CF1F6E9A2B0071D57C /* UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

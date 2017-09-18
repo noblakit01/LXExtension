@@ -10,6 +10,9 @@
 		0F56E5CD1F6E97EB0071D57C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5CC1F6E97EB0071D57C /* UIView.swift */; };
 		0F56E5CF1F6E9A2B0071D57C /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */; };
 		0F56E5D11F6E9B6D0071D57C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */; };
+		FD39308F1F6FC53900E0DA26 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39308E1F6FC53900E0DA26 /* CGPoint.swift */; };
+		FD3930911F6FC5BA00E0DA26 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3930901F6FC5BA00E0DA26 /* CGSize.swift */; };
+		FD3930931F6FC60500E0DA26 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3930921F6FC60500E0DA26 /* CGRect.swift */; };
 		OBJ_21 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Date.swift */; };
 		OBJ_29 /* LXExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* LXExtensionTests.swift */; };
 		OBJ_31 /* LXExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* LXExtension.framework */; };
@@ -29,6 +32,9 @@
 		0F56E5CC1F6E97EB0071D57C /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		FD39308E1F6FC53900E0DA26 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		FD3930901F6FC5BA00E0DA26 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		FD3930921F6FC60500E0DA26 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		OBJ_12 /* LXExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXExtensionTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* LXExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LXExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_15 /* LXExtensionTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = LXExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +104,9 @@
 				0F56E5CC1F6E97EB0071D57C /* UIView.swift */,
 				0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */,
 				0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */,
+				FD39308E1F6FC53900E0DA26 /* CGPoint.swift */,
+				FD3930901F6FC5BA00E0DA26 /* CGSize.swift */,
+				FD3930921F6FC60500E0DA26 /* CGRect.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -172,7 +181,10 @@
 				0F56E5CD1F6E97EB0071D57C /* UIView.swift in Sources */,
 				OBJ_21 /* Date.swift in Sources */,
 				0F56E5D11F6E9B6D0071D57C /* UICollectionView.swift in Sources */,
+				FD39308F1F6FC53900E0DA26 /* CGPoint.swift in Sources */,
+				FD3930911F6FC5BA00E0DA26 /* CGSize.swift in Sources */,
 				0F56E5CF1F6E9A2B0071D57C /* UITableView.swift in Sources */,
+				FD3930931F6FC60500E0DA26 /* CGRect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -61,6 +61,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F764E821F740DE100861D41 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Date.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		0F764E831F740DF400861D41 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0F56E5CC1F6E97EB0071D57C /* UIView.swift */,
+				0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */,
+				0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		0F764E841F740E0600861D41 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				FD39308E1F6FC53900E0DA26 /* CGPoint.swift */,
+				FD3930901F6FC5BA00E0DA26 /* CGSize.swift */,
+				FD3930921F6FC60500E0DA26 /* CGRect.swift */,
+			);
+			name = CoreGraphics;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,13 +128,9 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* Date.swift */,
-				0F56E5CC1F6E97EB0071D57C /* UIView.swift */,
-				0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */,
-				0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */,
-				FD39308E1F6FC53900E0DA26 /* CGPoint.swift */,
-				FD3930901F6FC5BA00E0DA26 /* CGSize.swift */,
-				FD3930921F6FC60500E0DA26 /* CGRect.swift */,
+				0F764E841F740E0600861D41 /* CoreGraphics */,
+				0F764E821F740DE100861D41 /* Foundation */,
+				0F764E831F740DF400861D41 /* UIKit */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;

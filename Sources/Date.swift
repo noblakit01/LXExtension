@@ -6,7 +6,7 @@
 //  Copyright © 2017 Luan Tran. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 // MARK: Time
 let secondPerMinute = 60

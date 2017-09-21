@@ -9,6 +9,17 @@
 import UIKit
 
 extension UIImage {
+    var bytes: Int {
+        if let data = UIImageJPEGRepresentation(self, 0.8) {
+            return data.count
+        }
+        return 0
+    }
+    
+    var ratio: CGFloat {
+        return size.width / size.height
+    }
+    
     func image(with color: UIColor, size: CGSize) -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)

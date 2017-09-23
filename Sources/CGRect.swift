@@ -8,10 +8,10 @@
 
 import CoreGraphics
 
-func *(left: CGRect, right: CGFloat) -> CGRect {
+public func *(left: CGRect, right: CGFloat) -> CGRect {
     return CGRect(origin: left.origin * right, size: left.size * right)
 }
 
-func /(left: CGRect, right: CGFloat) -> CGRect {
+public func /(left: CGRect, right: CGFloat) -> CGRect {
     return CGRect(origin: left.origin / right, size: left.size / right)
 }

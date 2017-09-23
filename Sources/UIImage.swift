@@ -20,7 +20,7 @@ extension UIImage {
         return size.width / size.height
     }
     
-    func image(with color: UIColor, size: CGSize) -> UIImage {
+    public func image(with color: UIColor, size: CGSize) -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         color.setFill()
@@ -30,7 +30,7 @@ extension UIImage {
         return image
     }
     
-    func crop(with rect: CGRect) -> UIImage? {
+    public func crop(with rect: CGRect) -> UIImage? {
         let rectTransform : CGAffineTransform
         switch (imageOrientation) {
         case .left:
@@ -72,7 +72,7 @@ extension UIImage {
         return newImageRef != nil ? UIImage(cgImage: newImageRef!) : nil
     }
     
-    func resize(with size: CGSize, interpolationQuality: CGInterpolationQuality = .high) -> UIImage? {
+    public func resize(with size: CGSize, interpolationQuality: CGInterpolationQuality = .high) -> UIImage? {
         let drawTransposed = imageOrientation == .left || imageOrientation == .leftMirrored || imageOrientation == .right || imageOrientation == .rightMirrored
         
         let transform = transformForOrientation(size)

@@ -14,7 +14,7 @@ let minutePerHour = 60
 let hourPerDay = 24
 
 extension Date {
-    init?(string: String?, format: String) {
+    public init?(string: String?, format: String) {
         guard let string = string else {
             return nil
         }
@@ -27,7 +27,7 @@ extension Date {
         self = date
     }
     
-    init(milliSecondsSince1970: Int) {
+    public init(milliSecondsSince1970: Int) {
         self = Date(timeIntervalSince1970: TimeInterval(milliSecondsSince1970 / 1000))
     }
     
@@ -76,7 +76,7 @@ extension Date {
         return dateFormatter.string(from: self)
     }
     
-    func string(dateFormat format: String) -> String? {
+    public func string(dateFormat format: String) -> String? {
         let dateFormater = DateFormatter()
         dateFormater.dateFormat = format
         return dateFormater.string(from: self)

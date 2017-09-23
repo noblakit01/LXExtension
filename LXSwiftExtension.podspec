@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LXSwiftExtension"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "iOS Extension in Swift"
   s.description  = <<-DESC
                   My iOS Extension collections in Swift.

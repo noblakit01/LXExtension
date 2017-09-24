@@ -31,11 +31,11 @@ extension Date {
         self = Date(timeIntervalSince1970: TimeInterval(milliSecondsSince1970 / 1000))
     }
     
-    var millisecondsSince1970:Int {
+    public var millisecondsSince1970:Int {
         return Int((timeIntervalSince1970 * 1000.0).rounded())
     }
     
-    var periodConvenient: String {
+    public var periodConvenient: String {
         let curDate = Date()
         let denta = curDate.timeIntervalSince(self)
         

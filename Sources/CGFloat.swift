@@ -9,7 +9,7 @@
 import CoreGraphics
 
 extension CGFloat {
-    var radians: CGFloat {
+    public var radians: CGFloat {
         return self * CGFloat(Float.pi) / 180.0
     }
 }

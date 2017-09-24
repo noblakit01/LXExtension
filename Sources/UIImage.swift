@@ -9,14 +9,14 @@
 import UIKit
 
 extension UIImage {
-    var bytes: Int {
+    public var bytes: Int {
         if let data = UIImageJPEGRepresentation(self, 0.8) {
             return data.count
         }
         return 0
     }
     
-    var ratio: CGFloat {
+    public var ratio: CGFloat {
         return size.width / size.height
     }
     

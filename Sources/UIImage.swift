@@ -30,6 +30,48 @@ extension UIImage {
         return image
     }
     
+    func imageFit(with size: CGSize) -> UIImage? {
+        guard let cgImage = cgImage else {
+            return nil
+        }
+        
+        if size.width > self.size.width || size.height > self.size.height {
+            return self
+        }
+        
+        var newSize = size
+        
+        let bitsPerComponent = cgImage.bitsPerComponent
+        let bytesPerRow = cgImage.bytesPerRow
+        let colorSpace = cgImage.colorSpace
+        let bitmapInfo = cgImage.bitmapInfo
+        
+        let context = CGContext(data: nil, width: Int(size.width), height: Int(size.height), bitsPerComponent: bitsPerComponent, bytesPerRow: bytesPerRow, space: colorSpace!, bitmapInfo: bitmapInfo.rawValue)!
+        
+        context.interpolationQuality = .high
+        
+        switch (imageOrientation) {
+        case .left, .leftMirrored:
+            context.rotate(by: CGFloat(90).radians)
+            context.translateBy(x: 0, y: -size.height)
+            newSize = CGSize(width: CGFloat(size.height), height: CGFloat(size.width))
+        case .right, .rightMirrored:
+            context.translateBy(x: 0, y: size.height)
+            context.rotate(by: CGFloat(-90).radians)
+            newSize = CGSize(width: CGFloat(size.height), height: CGFloat(size.width))
+        case .down, .downMirrored:
+            context.translateBy(x: -size.width, y: -size.height)
+            context.rotate(by: CGFloat(-180).radians)
+        default:
+            break
+        }
+        context.draw(cgImage, in: CGRect(origin: CGPoint.zero, size: newSize))
+        
+        
+        let imageRef = context.makeImage()
+        return imageRef != nil ? UIImage(cgImage: imageRef!) : nil
+    }
+    
     public func crop(with rect: CGRect) -> UIImage? {
         let rectTransform : CGAffineTransform
         switch (imageOrientation) {

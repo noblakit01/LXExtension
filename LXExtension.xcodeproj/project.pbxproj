@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F41F61B1F892826009607E3 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F41F61A1F892826009607E3 /* URL.swift */; };
 		0F56E5CD1F6E97EB0071D57C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5CC1F6E97EB0071D57C /* UIView.swift */; };
 		0F56E5CF1F6E9A2B0071D57C /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */; };
 		0F56E5D11F6E9B6D0071D57C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F41F61A1F892826009607E3 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		0F56E5CC1F6E97EB0071D57C /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* Date.swift */,
+				0F41F61A1F892826009607E3 /* URL.swift */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				0F764E881F74175600861D41 /* CGFloat.swift in Sources */,
 				0F56E5CD1F6E97EB0071D57C /* UIView.swift in Sources */,
 				0F764E861F74159700861D41 /* UIImage.swift in Sources */,
+				0F41F61B1F892826009607E3 /* URL.swift in Sources */,
 				OBJ_21 /* Date.swift in Sources */,
 				0F56E5D11F6E9B6D0071D57C /* UICollectionView.swift in Sources */,
 				FD0B7A721F862BBB005AA90E /* UIScrollView.swift in Sources */,

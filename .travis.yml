@@ -1,9 +1,6 @@
 language: objective-c
 osx_image: xcode8.3
 
-xcode_project: LXExtension.xcodeproj
-xcode_scheme: 
-- LXExtension
-xcode_sdk:
-- iphonesimulator9.0
-- iphoneos9.0
+script:
+- xcodebuild build -project LXExtension.xcodeproj -scheme LXExtension -sdk iphonesimulator
+- xcodebuild build -project LXExtension.xcodeproj -scheme LXExtension -sdk iphoneos

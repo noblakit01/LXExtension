@@ -14,6 +14,7 @@ let minutePerHour = 60
 let hourPerDay = 24
 
 extension Date {
+    
     public init?(string: String?, format: String) {
         guard let string = string else {
             return nil
@@ -81,4 +82,5 @@ extension Date {
         dateFormater.dateFormat = format
         return dateFormater.string(from: self)
     }
+    
 }

@@ -50,7 +50,7 @@ extension UIImage {
         
         context.interpolationQuality = .high
         
-        switch (imageOrientation) {
+        switch imageOrientation {
         case .left, .leftMirrored:
             context.rotate(by: CGFloat(90).radians)
             context.translateBy(x: 0, y: -size.height)
@@ -74,7 +74,7 @@ extension UIImage {
     
     func imageFit2(with size: CGSize) -> UIImage? {
         var ratio = max(size.width / self.size.width, size.height / self.size.height) * 2
-        if (ratio >= 1.0) {
+        if ratio >= 1.0 {
             return self
         }
         
@@ -92,7 +92,7 @@ extension UIImage {
     
     public func crop(with rect: CGRect) -> UIImage? {
         let rectTransform : CGAffineTransform
-        switch (imageOrientation) {
+        switch imageOrientation {
         case .left:
             rectTransform = CGAffineTransform(rotationAngle: CGFloat(90.0).radians).translatedBy(x: 0, y: -size.height)
         case .right:
@@ -163,4 +163,5 @@ extension UIImage {
         
         return transform
     }
+    
 }

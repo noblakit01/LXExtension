@@ -1,4 +1,7 @@
 # LXExtension
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c2d011634a8243b8854993082aef72c7)](https://www.codacy.com/app/noblakit01/LXExtension?utm_source=github.com&utm_medium=referral&utm_content=noblakit01/LXExtension&utm_campaign=badger)
+
 iOS Extension in Swift
 
 ## Requirements

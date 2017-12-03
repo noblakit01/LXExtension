@@ -20,6 +20,13 @@ extension UIImage {
         return size.width / size.height
     }
     
+    public convenience init?(name: String?) {
+        guard let name = name else {
+            return nil
+        }
+        self.init(name: name)
+    }
+    
     public func image(with color: UIColor, size: CGSize) -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)

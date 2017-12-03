@@ -24,7 +24,7 @@ extension UIImage {
         guard let name = name else {
             return nil
         }
-        self.init(name: name)
+        self.init(named: name)
     }
     
     public func image(with color: UIColor, size: CGSize) -> UIImage {

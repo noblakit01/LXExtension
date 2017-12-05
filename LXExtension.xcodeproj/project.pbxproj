@@ -12,7 +12,6 @@
 		0F56E5CF1F6E9A2B0071D57C /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */; };
 		0F56E5D11F6E9B6D0071D57C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */; };
 		0F764E861F74159700861D41 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F764E851F74159700861D41 /* UIImage.swift */; };
-		0F764E881F74175600861D41 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F764E871F74175600861D41 /* CGFloat.swift */; };
 		74E889391FD3E50900B2E62E /* UIImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E889371FD3E4E300B2E62E /* UIImageTest.swift */; };
 		FD0B7A721F862BBB005AA90E /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0B7A711F862BBB005AA90E /* UIScrollView.swift */; };
 		FD39308F1F6FC53900E0DA26 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39308E1F6FC53900E0DA26 /* CGPoint.swift */; };
@@ -42,7 +41,6 @@
 		0F56E5CE1F6E9A2B0071D57C /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		0F764E851F74159700861D41 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		0F764E871F74175600861D41 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		74E889371FD3E4E300B2E62E /* UIImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageTest.swift; path = Tests/LXExtensionTests/UIKit/UIImageTest.swift; sourceTree = SOURCE_ROOT; };
 		FD0B7A711F862BBB005AA90E /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		FD39308E1F6FC53900E0DA26 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				FD39308E1F6FC53900E0DA26 /* CGPoint.swift */,
 				FD3930901F6FC5BA00E0DA26 /* CGSize.swift */,
 				FD3930921F6FC60500E0DA26 /* CGRect.swift */,
-				0F764E871F74175600861D41 /* CGFloat.swift */,
 			);
 			name = CoreGraphics;
 			sourceTree = "<group>";
@@ -251,7 +248,6 @@
 			buildActionMask = 0;
 			files = (
 				FD5497AD1FD6359D006AED28 /* FloatingPoint.swift in Sources */,
-				0F764E881F74175600861D41 /* CGFloat.swift in Sources */,
 				0F56E5CD1F6E97EB0071D57C /* UIView.swift in Sources */,
 				FD5497B41FD638EF006AED28 /* BinaryInteger.swift in Sources */,
 				0F764E861F74159700861D41 /* UIImage.swift in Sources */,

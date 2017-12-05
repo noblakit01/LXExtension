@@ -19,6 +19,7 @@
 		FD3930911F6FC5BA00E0DA26 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3930901F6FC5BA00E0DA26 /* CGSize.swift */; };
 		FD3930931F6FC60500E0DA26 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3930921F6FC60500E0DA26 /* CGRect.swift */; };
 		FD5497AD1FD6359D006AED28 /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5497AC1FD6359D006AED28 /* FloatingPoint.swift */; };
+		FD5497B41FD638EF006AED28 /* BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5497B31FD638EF006AED28 /* BinaryInteger.swift */; };
 		OBJ_21 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Date.swift */; };
 		OBJ_29 /* LXExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* LXExtensionTests.swift */; };
 		OBJ_31 /* LXExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* LXExtension.framework */; };
@@ -47,6 +48,7 @@
 		FD3930901F6FC5BA00E0DA26 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
 		FD3930921F6FC60500E0DA26 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		FD5497AC1FD6359D006AED28 /* FloatingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPoint.swift; sourceTree = "<group>"; };
+		FD5497B31FD638EF006AED28 /* BinaryInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryInteger.swift; sourceTree = "<group>"; };
 		OBJ_12 /* LXExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXExtensionTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* LXExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LXExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_15 /* LXExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = LXExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 				FD5497AC1FD6359D006AED28 /* FloatingPoint.swift */,
 				OBJ_8 /* Date.swift */,
 				0F41F61A1F892826009607E3 /* URL.swift */,
+				FD5497B31FD638EF006AED28 /* BinaryInteger.swift */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				FD5497AD1FD6359D006AED28 /* FloatingPoint.swift in Sources */,
 				0F764E881F74175600861D41 /* CGFloat.swift in Sources */,
 				0F56E5CD1F6E97EB0071D57C /* UIView.swift in Sources */,
+				FD5497B41FD638EF006AED28 /* BinaryInteger.swift in Sources */,
 				0F764E861F74159700861D41 /* UIImage.swift in Sources */,
 				0F41F61B1F892826009607E3 /* URL.swift in Sources */,
 				OBJ_21 /* Date.swift in Sources */,

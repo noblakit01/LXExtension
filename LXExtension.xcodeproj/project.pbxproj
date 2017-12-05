@@ -19,6 +19,7 @@
 		FD3930911F6FC5BA00E0DA26 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3930901F6FC5BA00E0DA26 /* CGSize.swift */; };
 		FD3930931F6FC60500E0DA26 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3930921F6FC60500E0DA26 /* CGRect.swift */; };
 		FD5497AD1FD6359D006AED28 /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5497AC1FD6359D006AED28 /* FloatingPoint.swift */; };
+		FD5497B21FD63727006AED28 /* FloatingPointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5497B11FD63727006AED28 /* FloatingPointTest.swift */; };
 		FD5497B41FD638EF006AED28 /* BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5497B31FD638EF006AED28 /* BinaryInteger.swift */; };
 		OBJ_21 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Date.swift */; };
 		OBJ_29 /* LXExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* LXExtensionTests.swift */; };
@@ -48,6 +49,7 @@
 		FD3930901F6FC5BA00E0DA26 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
 		FD3930921F6FC60500E0DA26 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		FD5497AC1FD6359D006AED28 /* FloatingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPoint.swift; sourceTree = "<group>"; };
+		FD5497B11FD63727006AED28 /* FloatingPointTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingPointTest.swift; path = Tests/LXExtensionTests/Foundation/FloatingPointTest.swift; sourceTree = SOURCE_ROOT; };
 		FD5497B31FD638EF006AED28 /* BinaryInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryInteger.swift; sourceTree = "<group>"; };
 		OBJ_12 /* LXExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXExtensionTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* LXExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LXExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,14 @@
 				74E889371FD3E4E300B2E62E /* UIImageTest.swift */,
 			);
 			path = UIKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		FD5497AE1FD636C2006AED28 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FD5497B11FD63727006AED28 /* FloatingPointTest.swift */,
+			);
+			path = Foundation;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_10 /* Tests */ = {
@@ -260,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				FD5497B21FD63727006AED28 /* FloatingPointTest.swift in Sources */,
 				OBJ_29 /* LXExtensionTests.swift in Sources */,
 				74E889391FD3E50900B2E62E /* UIImageTest.swift in Sources */,
 			);

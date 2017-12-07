@@ -20,4 +20,20 @@ class CGPointTest: XCTestCase {
         super.tearDown()
     }
     
+    func testPlusTwoPoint() {
+        let a = CGPoint(x: 5, y: 4)
+        let b = CGPoint(x: -2, y: 2)
+        let c = a + b
+        
+        XCTAssertTrue(c.x == 3)
+        XCTAssertTrue(c.y == 6)
+    }
+    
+    func testMultiPointWithNumber() {
+        let a = CGPoint(x: 3, y: 2)
+        let b = a * 2
+        
+        XCTAssertTrue(b.x == 6)
+        XCTAssertTrue(b.y == 4)
+    }
 }

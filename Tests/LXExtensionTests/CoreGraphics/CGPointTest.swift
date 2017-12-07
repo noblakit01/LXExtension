@@ -36,4 +36,11 @@ class CGPointTest: XCTestCase {
         XCTAssertTrue(b.x == 6)
         XCTAssertTrue(b.y == 4)
     }
+    
+    func testDividePointWithNumber() {
+        let a = CGPoint(x: 4, y: 10)
+        let b = a / 2
+        
+        XCTAssertTrue(b == CGPoint(x: 2, y: 5))
+    }
 }

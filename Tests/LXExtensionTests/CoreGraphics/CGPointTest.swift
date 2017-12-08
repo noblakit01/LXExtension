@@ -25,14 +25,14 @@ class CGPointTest: XCTestCase {
         let b = CGPoint(x: -2, y: 2)
         let c = a + b
         
-        XCTAssertTrue(c.x == 3)
-        XCTAssertTrue(c.y == 6)
+        XCTAssertTrue(c == CGPoint(x: 3, y: 6))
     }
     
     func testMinusTwoPoint() {
         let a = CGPoint(x: 2, y: 3)
         let b = CGPoint(x: 2, y: 4)
         let c = a - b
+        
         XCTAssertTrue(c == CGPoint(x: 0, y: -1))
     }
     
@@ -40,8 +40,7 @@ class CGPointTest: XCTestCase {
         let a = CGPoint(x: 3, y: 2)
         let b = a * 2
         
-        XCTAssertTrue(b.x == 6)
-        XCTAssertTrue(b.y == 4)
+        XCTAssertTrue(b == CGPoint(x: 6, y: 4))
     }
     
     func testDividePointWithNumber() {
@@ -50,4 +49,5 @@ class CGPointTest: XCTestCase {
         
         XCTAssertTrue(b == CGPoint(x: 2, y: 5))
     }
+    
 }

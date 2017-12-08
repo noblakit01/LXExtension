@@ -13,6 +13,7 @@
 		0F56E5D11F6E9B6D0071D57C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */; };
 		0F764E861F74159700861D41 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F764E851F74159700861D41 /* UIImage.swift */; };
 		74E889391FD3E50900B2E62E /* UIImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E889371FD3E4E300B2E62E /* UIImageTest.swift */; };
+		74F001F01FDA0BAE00F46EC6 /* CGPointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F001EF1FDA0BAE00F46EC6 /* CGPointTest.swift */; };
 		FD0B7A721F862BBB005AA90E /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0B7A711F862BBB005AA90E /* UIScrollView.swift */; };
 		FD39308F1F6FC53900E0DA26 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD39308E1F6FC53900E0DA26 /* CGPoint.swift */; };
 		FD3930911F6FC5BA00E0DA26 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3930901F6FC5BA00E0DA26 /* CGSize.swift */; };
@@ -42,6 +43,7 @@
 		0F56E5D01F6E9B6D0071D57C /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		0F764E851F74159700861D41 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		74E889371FD3E4E300B2E62E /* UIImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageTest.swift; path = Tests/LXExtensionTests/UIKit/UIImageTest.swift; sourceTree = SOURCE_ROOT; };
+		74F001EF1FDA0BAE00F46EC6 /* CGPointTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTest.swift; sourceTree = "<group>"; };
 		FD0B7A711F862BBB005AA90E /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		FD39308E1F6FC53900E0DA26 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		FD3930901F6FC5BA00E0DA26 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
@@ -113,7 +115,17 @@
 			children = (
 				74E889371FD3E4E300B2E62E /* UIImageTest.swift */,
 			);
-			path = UIKit;
+			name = UIKit;
+			path = Tests/LXExtensionTests/UIKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		74F001EE1FD98B9600F46EC6 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				74F001EF1FDA0BAE00F46EC6 /* CGPointTest.swift */,
+			);
+			name = CoreGraphics;
+			path = Tests/LXExtensionTests/CoreGraphics;
 			sourceTree = SOURCE_ROOT;
 		};
 		FD5497AE1FD636C2006AED28 /* Foundation */ = {
@@ -121,7 +133,8 @@
 			children = (
 				FD5497B11FD63727006AED28 /* FloatingPointTest.swift */,
 			);
-			path = Foundation;
+			name = Foundation;
+			path = Tests/LXExtensionTests/Foundation;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_10 /* Tests */ = {
@@ -135,6 +148,7 @@
 		OBJ_11 /* LXExtensionTests */ = {
 			isa = PBXGroup;
 			children = (
+				74F001EE1FD98B9600F46EC6 /* CoreGraphics */,
 				FD5497AE1FD636C2006AED28 /* Foundation */,
 				74E889341FD3E41900B2E62E /* UIKit */,
 				OBJ_12 /* LXExtensionTests.swift */,
@@ -266,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				74F001F01FDA0BAE00F46EC6 /* CGPointTest.swift in Sources */,
 				FD5497B21FD63727006AED28 /* FloatingPointTest.swift in Sources */,
 				OBJ_29 /* LXExtensionTests.swift in Sources */,
 				74E889391FD3E50900B2E62E /* UIImageTest.swift in Sources */,

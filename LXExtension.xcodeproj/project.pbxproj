@@ -23,6 +23,7 @@
 		74883D811FFD17EC0052E3B9 /* UIColorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74883D801FFD17EC0052E3B9 /* UIColorTest.swift */; };
 		74E889391FD3E50900B2E62E /* UIImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E889371FD3E4E300B2E62E /* UIImageTest.swift */; };
 		74F001F01FDA0BAE00F46EC6 /* CGPointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F001EF1FDA0BAE00F46EC6 /* CGPointTest.swift */; };
+		74F21BA7200249D5005C6E2D /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F21BA6200249D5005C6E2D /* UITextField.swift */; };
 		FD5497B21FD63727006AED28 /* FloatingPointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5497B11FD63727006AED28 /* FloatingPointTest.swift */; };
 		OBJ_29 /* LXExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* LXExtensionTests.swift */; };
 		OBJ_31 /* LXExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* LXExtension.framework */; };
@@ -55,6 +56,7 @@
 		74883D801FFD17EC0052E3B9 /* UIColorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTest.swift; sourceTree = "<group>"; };
 		74E889371FD3E4E300B2E62E /* UIImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageTest.swift; path = Tests/LXExtensionTests/UIKit/UIImageTest.swift; sourceTree = SOURCE_ROOT; };
 		74F001EF1FDA0BAE00F46EC6 /* CGPointTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTest.swift; sourceTree = "<group>"; };
+		74F21BA6200249D5005C6E2D /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextField.swift; path = UIKit/UITextField.swift; sourceTree = "<group>"; };
 		FD5497B11FD63727006AED28 /* FloatingPointTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingPointTest.swift; path = Tests/LXExtensionTests/Foundation/FloatingPointTest.swift; sourceTree = SOURCE_ROOT; };
 		OBJ_12 /* LXExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXExtensionTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* LXExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LXExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,11 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				74883D751FFD16660052E3B9 /* UICollectionView.swift */,
+				74883D7E1FFD17660052E3B9 /* UIColor.swift */,
 				74883D741FFD16660052E3B9 /* UIImage.swift */,
 				74883D771FFD16660052E3B9 /* UIScrollView.swift */,
 				74883D761FFD16660052E3B9 /* UITableView.swift */,
 				74883D781FFD16670052E3B9 /* UIView.swift */,
-				74883D7E1FFD17660052E3B9 /* UIColor.swift */,
+				74F21BA6200249D5005C6E2D /* UITextField.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				74883D6A1FFD15E00052E3B9 /* CGRect.swift in Sources */,
 				74883D681FFD15E00052E3B9 /* CGPoint.swift in Sources */,
 				74883D691FFD15E00052E3B9 /* CGSize.swift in Sources */,
+				74F21BA7200249D5005C6E2D /* UITextField.swift in Sources */,
 				74883D7F1FFD17660052E3B9 /* UIColor.swift in Sources */,
 				74883D7D1FFD16670052E3B9 /* UIView.swift in Sources */,
 				74883D701FFD16560052E3B9 /* Date.swift in Sources */,

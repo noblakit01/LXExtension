@@ -22,6 +22,7 @@
 		74883D7F1FFD17660052E3B9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74883D7E1FFD17660052E3B9 /* UIColor.swift */; };
 		74883D811FFD17EC0052E3B9 /* UIColorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74883D801FFD17EC0052E3B9 /* UIColorTest.swift */; };
 		74E889391FD3E50900B2E62E /* UIImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E889371FD3E4E300B2E62E /* UIImageTest.swift */; };
+		74EE61B1200B9DF800F69EEF /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EE61B0200B9DF800F69EEF /* UIFont.swift */; };
 		74F001F01FDA0BAE00F46EC6 /* CGPointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F001EF1FDA0BAE00F46EC6 /* CGPointTest.swift */; };
 		74F21BA7200249D5005C6E2D /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F21BA6200249D5005C6E2D /* UITextField.swift */; };
 		74F21BA920024A2E005C6E2D /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F21BA820024A2E005C6E2D /* UITextView.swift */; };
@@ -56,6 +57,7 @@
 		74883D7E1FFD17660052E3B9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = UIKit/UIColor.swift; sourceTree = "<group>"; };
 		74883D801FFD17EC0052E3B9 /* UIColorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTest.swift; sourceTree = "<group>"; };
 		74E889371FD3E4E300B2E62E /* UIImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageTest.swift; path = Tests/LXExtensionTests/UIKit/UIImageTest.swift; sourceTree = SOURCE_ROOT; };
+		74EE61B0200B9DF800F69EEF /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = UIKit/UIFont.swift; sourceTree = "<group>"; };
 		74F001EF1FDA0BAE00F46EC6 /* CGPointTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTest.swift; sourceTree = "<group>"; };
 		74F21BA6200249D5005C6E2D /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextField.swift; path = UIKit/UITextField.swift; sourceTree = "<group>"; };
 		74F21BA820024A2E005C6E2D /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextView.swift; path = UIKit/UITextView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				74883D751FFD16660052E3B9 /* UICollectionView.swift */,
 				74883D7E1FFD17660052E3B9 /* UIColor.swift */,
+				74EE61B0200B9DF800F69EEF /* UIFont.swift */,
 				74883D741FFD16660052E3B9 /* UIImage.swift */,
 				74883D771FFD16660052E3B9 /* UIScrollView.swift */,
 				74883D761FFD16660052E3B9 /* UITableView.swift */,
@@ -285,6 +288,7 @@
 				74883D691FFD15E00052E3B9 /* CGSize.swift in Sources */,
 				74F21BA7200249D5005C6E2D /* UITextField.swift in Sources */,
 				74883D7F1FFD17660052E3B9 /* UIColor.swift in Sources */,
+				74EE61B1200B9DF800F69EEF /* UIFont.swift in Sources */,
 				74883D7D1FFD16670052E3B9 /* UIView.swift in Sources */,
 				74883D701FFD16560052E3B9 /* Date.swift in Sources */,
 				74883D791FFD16670052E3B9 /* UIImage.swift in Sources */,

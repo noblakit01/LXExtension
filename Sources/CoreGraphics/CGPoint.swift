@@ -31,3 +31,11 @@ public func +=(left: inout CGPoint, right: CGPoint) {
 public func -=(left: inout CGPoint, right: CGPoint) {
     left = left - right
 }
+
+extension CGPoint {
+    
+    var length: CGFloat {
+        return sqrt(pow(x, 2) + pow(y, 2))
+    }
+    
+}

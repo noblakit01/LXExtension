@@ -27,6 +27,14 @@ extension UIImage {
         self.init(named: name)
     }
     
+    public convenience init?(pixelBuffer: CVPixelBuffer, context: CIContext = CIContext()) {
+        if let cgImage = CGImage.from(pixelBuffer: pixelBuffer, context: context) {
+            self.init(cgImage: cgImage)
+        } else {
+            return nil
+        }
+    }
+    
     public func image(with color: UIColor, size: CGSize) -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)

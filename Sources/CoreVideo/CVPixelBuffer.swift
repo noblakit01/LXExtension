@@ -16,7 +16,7 @@ extension CVPixelBuffer {
                       height: CVPixelBufferGetHeight(self))
     }
     
-    public func resize(to size: CGSize) -> CVPixelBuffer {
+    public func resize_vImage(to size: CGSize) -> CVPixelBuffer {
         var format = vImage_CGImageFormat(bitsPerComponent: 8,
                                           bitsPerPixel: 32,
                                           colorSpace: nil,

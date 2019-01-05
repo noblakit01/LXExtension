@@ -16,7 +16,9 @@ extension UIView {
     
     public class var nib: UINib {
         get {
-            return UINib(nibName: String(describing: self), bundle: nil)
+            let nibName = String(describing: self)
+            let bundle = Bundle(for: self)
+            return UINib(nibName: nibName, bundle: bundle)
         }
     }
     

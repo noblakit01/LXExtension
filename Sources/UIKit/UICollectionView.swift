@@ -10,10 +10,28 @@ import UIKit
 
 extension UICollectionView {
     
-    public func register(cellType: UICollectionViewCell.Type) {
-        let nib = cellType.nib
-        let identifier = cellType.identifier
+    public func indexPathsForElements(in rect: CGRect) -> [IndexPath] {
+        guard let allLayoutAttributes = collectionViewLayout.layoutAttributesForElements(in: rect) else {
+            return []
+        }
+        return allLayoutAttributes.map { $0.indexPath }
+    }
+    
+}
+
+extension UICollectionView {
+    
+    public func register(cellClass: UICollectionViewCell.Type) {
+        let nib = cellClass.nib
+        let identifier = cellClass.identifier
         register(nib, forCellWithReuseIdentifier: identifier)
+    }
+    
+    public func dequeueReusableCell<T: UICollectionViewCell>(cellClass: T.Type, for indexPath: IndexPath) -> T {
+        guard let cell = dequeueReusableCell(withReuseIdentifier: cellClass.identifier, for: indexPath) as? T else {
+            fatalError("Can't dequeue reusable cell with \(T.description())")
+        }
+        return cell
     }
     
 }

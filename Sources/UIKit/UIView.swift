@@ -26,6 +26,7 @@ extension UIView {
         }
     }
     
+    @available(iOS 9.0, *)
     func startLoading() -> UIView {
         let view = UIView()
         view.backgroundColor = .clear

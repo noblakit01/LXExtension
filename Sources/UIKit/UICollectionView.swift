@@ -21,10 +21,12 @@ extension UICollectionView {
 
 extension UICollectionView {
     
-    public func register(cellClass: UICollectionViewCell.Type) {
-        let nib = cellClass.nib
-        let identifier = cellClass.identifier
-        register(nib, forCellWithReuseIdentifier: identifier)
+    public func registerClass(of cell: UICollectionViewCell.Type) {
+        register(cell, forCellWithReuseIdentifier: cell.identifier)
+    }
+    
+    public func registerNib(of cell: UICollectionViewCell.Type) {
+        register(cell.nib, forCellWithReuseIdentifier: cell.identifier)
     }
     
     public func dequeueReusableCell<T: UICollectionViewCell>(cellClass: T.Type, for indexPath: IndexPath) -> T {

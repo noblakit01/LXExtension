@@ -26,6 +26,7 @@
 		5225158E21D0C0AA00751C35 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225158521D0C0AA00751C35 /* UIColor.swift */; };
 		5225158F21D0C0AA00751C35 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225158621D0C0AA00751C35 /* UICollectionView.swift */; };
 		5225159021D0C0AA00751C35 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225158721D0C0AA00751C35 /* UIView.swift */; };
+		74578E9622221BAB002AA829 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74578E9522221BAB002AA829 /* UIButton.swift */; };
 		74883D811FFD17EC0052E3B9 /* UIColorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74883D801FFD17EC0052E3B9 /* UIColorTest.swift */; };
 		74E889391FD3E50900B2E62E /* UIImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E889371FD3E4E300B2E62E /* UIImageTest.swift */; };
 		74F001F01FDA0BAE00F46EC6 /* CGPointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F001EF1FDA0BAE00F46EC6 /* CGPointTest.swift */; };
@@ -64,6 +65,7 @@
 		5225158521D0C0AA00751C35 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5225158621D0C0AA00751C35 /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		5225158721D0C0AA00751C35 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		74578E9522221BAB002AA829 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		74883D801FFD17EC0052E3B9 /* UIColorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTest.swift; sourceTree = "<group>"; };
 		74E889371FD3E4E300B2E62E /* UIImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageTest.swift; path = Tests/LXExtensionTests/UIKit/UIImageTest.swift; sourceTree = SOURCE_ROOT; };
 		74F001EF1FDA0BAE00F46EC6 /* CGPointTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTest.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				5225157F21D0C0A900751C35 /* UITextField.swift */,
 				5225158121D0C0A900751C35 /* UITextView.swift */,
 				5225158721D0C0AA00751C35 /* UIView.swift */,
+				74578E9522221BAB002AA829 /* UIButton.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				5225158F21D0C0AA00751C35 /* UICollectionView.swift in Sources */,
 				5225159021D0C0AA00751C35 /* UIView.swift in Sources */,
 				5225157021D0C06900751C35 /* CGRect.swift in Sources */,
+				74578E9622221BAB002AA829 /* UIButton.swift in Sources */,
 				5225158B21D0C0AA00751C35 /* UIFont.swift in Sources */,
 				5225158921D0C0AA00751C35 /* UIImage.swift in Sources */,
 				5225157E21D0C09500751C35 /* Date.swift in Sources */,

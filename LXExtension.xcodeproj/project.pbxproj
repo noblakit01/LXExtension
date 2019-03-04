@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5216BF0F222D1A3D00E15B41 /* MLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5216BF0E222D1A3D00E15B41 /* MLModel.swift */; };
 		5225156F21D0C06900751C35 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225156B21D0C06900751C35 /* CGPoint.swift */; };
 		5225157021D0C06900751C35 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225156C21D0C06900751C35 /* CGRect.swift */; };
 		5225157121D0C06900751C35 /* CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225156D21D0C06900751C35 /* CGImage.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5216BF0E222D1A3D00E15B41 /* MLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModel.swift; sourceTree = "<group>"; };
 		5225156B21D0C06900751C35 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		5225156C21D0C06900751C35 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		5225156D21D0C06900751C35 /* CGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImage.swift; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
+		5216BF0D222D1A2700E15B41 /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				5216BF0E222D1A3D00E15B41 /* MLModel.swift */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
 		5225155F21D0B35700751C35 /* CoreVideo */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +223,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				5216BF0D222D1A2700E15B41 /* CoreML */,
 				5225155F21D0B35700751C35 /* CoreVideo */,
 				0F764E841F740E0600861D41 /* CoreGraphics */,
 				0F764E821F740DE100861D41 /* Foundation */,
@@ -303,6 +314,7 @@
 				5225158821D0C0AA00751C35 /* UITextField.swift in Sources */,
 				5225158D21D0C0AA00751C35 /* UIScrollView.swift in Sources */,
 				5225158E21D0C0AA00751C35 /* UIColor.swift in Sources */,
+				5216BF0F222D1A3D00E15B41 /* MLModel.swift in Sources */,
 				5225157D21D0C09500751C35 /* FloatingPoint.swift in Sources */,
 				5225157C21D0C09500751C35 /* URL.swift in Sources */,
 				5225158A21D0C0AA00751C35 /* UITextView.swift in Sources */,

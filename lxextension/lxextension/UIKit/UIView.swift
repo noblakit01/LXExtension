@@ -38,7 +38,7 @@ extension UIView {
         dimmingView.translatesAutoresizingMaskIntoConstraints = false
         dimmingView.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         
-        let indicatorView = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        let indicatorView = UIActivityIndicatorView(style: .whiteLarge)
         indicatorView.translatesAutoresizingMaskIntoConstraints = false
         indicatorView.startAnimating()
         

@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImage {
     public var bytes: Int {
-        if let data = UIImageJPEGRepresentation(self, 0.8) {
+        if let data = jpegData(compressionQuality: 0.8) {
             return data.count
         }
         return 0

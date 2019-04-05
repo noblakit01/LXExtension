@@ -10,10 +10,6 @@ import UIKit
 
 extension CVPixelBuffer {
     
-    static public func fromUIImage(_ image: UIImage) -> CVPixelBuffer? {
-        return fromUIImage(image, size: image.size)
-    }
-    
     static public func fromUIImage(_ image: UIImage, size: CGSize) -> CVPixelBuffer? {
         return fromUIImage(image, width: Int(size.width), height: Int(size.height))
     }

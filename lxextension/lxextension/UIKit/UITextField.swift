@@ -10,7 +10,7 @@ import UIKit
 extension UITextField {
     
     public var hadValue: Bool {
-        return text != nil && text!.characters.count > 0
+        return text != nil && text!.count > 0
     }
     
 }

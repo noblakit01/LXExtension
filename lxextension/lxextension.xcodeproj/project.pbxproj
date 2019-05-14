@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522526B2228AABE7008BDA1F /* PHAssetCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522526B1228AABE7008BDA1F /* PHAssetCollection.swift */; };
 		525446742256FE6A00AD2EE9 /* lxextension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5254466A2256FE6900AD2EE9 /* lxextension.framework */; };
 		525446792256FE6A00AD2EE9 /* lxextensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446782256FE6A00AD2EE9 /* lxextensionTests.swift */; };
 		5254467B2256FE6A00AD2EE9 /* lxextension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5254466D2256FE6900AD2EE9 /* lxextension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		522526B1228AABE7008BDA1F /* PHAssetCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAssetCollection.swift; sourceTree = "<group>"; };
 		5254466A2256FE6900AD2EE9 /* lxextension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lxextension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5254466D2256FE6900AD2EE9 /* lxextension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lxextension.h; sourceTree = "<group>"; };
 		5254466E2256FE6900AD2EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		522526B0228AABD1008BDA1F /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				522526B1228AABE7008BDA1F /* PHAssetCollection.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
 		525446602256FE6900AD2EE9 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		5254466C2256FE6900AD2EE9 /* lxextension */ = {
 			isa = PBXGroup;
 			children = (
+				522526B0228AABD1008BDA1F /* Photos */,
 				525446882256FEAE00AD2EE9 /* Foundation */,
 				525446872256FEA700AD2EE9 /* CoreVideo */,
 				525446862256FE9E00AD2EE9 /* CoreGraphics */,
@@ -316,6 +327,7 @@
 				5254469A2256FF1200AD2EE9 /* CGImage.swift in Sources */,
 				525446AD2256FF1C00AD2EE9 /* UIView.swift in Sources */,
 				5254469C2256FF1200AD2EE9 /* CGRect.swift in Sources */,
+				522526B2228AABE7008BDA1F /* PHAssetCollection.swift in Sources */,
 				5254468F2256FF0300AD2EE9 /* Date.swift in Sources */,
 				5254468D2256FF0300AD2EE9 /* URL.swift in Sources */,
 				525446AE2256FF1C00AD2EE9 /* UIButton.swift in Sources */,

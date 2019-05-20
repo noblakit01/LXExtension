@@ -32,6 +32,7 @@
 		525446AF2256FF1C00AD2EE9 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446A52256FF1C00AD2EE9 /* UIFont.swift */; };
 		525446B02256FF1C00AD2EE9 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446A62256FF1C00AD2EE9 /* UICollectionView.swift */; };
 		525446B22256FF2200AD2EE9 /* MLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446B12256FF2200AD2EE9 /* MLModel.swift */; };
+		5257003A2292887E009311C2 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525700392292887E009311C2 /* UIView+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		525446A52256FF1C00AD2EE9 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		525446A62256FF1C00AD2EE9 /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		525446B12256FF2200AD2EE9 /* MLModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLModel.swift; sourceTree = "<group>"; };
+		525700392292887E009311C2 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				525446A22256FF1B00AD2EE9 /* UITextField.swift */,
 				5254469F2256FF1B00AD2EE9 /* UITextView.swift */,
 				525446A32256FF1B00AD2EE9 /* UIView.swift */,
+				525700392292887E009311C2 /* UIView+Constraints.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				525446AD2256FF1C00AD2EE9 /* UIView.swift in Sources */,
 				5254469C2256FF1200AD2EE9 /* CGRect.swift in Sources */,
 				522526B2228AABE7008BDA1F /* PHAssetCollection.swift in Sources */,
+				5257003A2292887E009311C2 /* UIView+Constraints.swift in Sources */,
 				5254468F2256FF0300AD2EE9 /* Date.swift in Sources */,
 				5254468D2256FF0300AD2EE9 /* URL.swift in Sources */,
 				525446AE2256FF1C00AD2EE9 /* UIButton.swift in Sources */,

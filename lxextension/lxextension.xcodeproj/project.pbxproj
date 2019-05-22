@@ -33,6 +33,7 @@
 		525446B02256FF1C00AD2EE9 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446A62256FF1C00AD2EE9 /* UICollectionView.swift */; };
 		525446B22256FF2200AD2EE9 /* MLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446B12256FF2200AD2EE9 /* MLModel.swift */; };
 		5257003A2292887E009311C2 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525700392292887E009311C2 /* UIView+Constraints.swift */; };
+		52B510D722954C06003FE512 /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B510D622954C06003FE512 /* CIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		525446A62256FF1C00AD2EE9 /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		525446B12256FF2200AD2EE9 /* MLModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLModel.swift; sourceTree = "<group>"; };
 		525700392292887E009311C2 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		52B510D622954C06003FE512 /* CIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				522526B0228AABD1008BDA1F /* Photos */,
 				525446882256FEAE00AD2EE9 /* Foundation */,
+				52B510D522954BEC003FE512 /* CoreImage */,
 				525446872256FEA700AD2EE9 /* CoreVideo */,
 				525446862256FE9E00AD2EE9 /* CoreGraphics */,
 				525446852256FE9000AD2EE9 /* UIKit */,
@@ -201,6 +204,14 @@
 				525446892256FF0300AD2EE9 /* URL.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		52B510D522954BEC003FE512 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				52B510D622954C06003FE512 /* CIImage.swift */,
+			);
+			path = CoreImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 				525446AC2256FF1C00AD2EE9 /* UITextField.swift in Sources */,
 				525446A72256FF1C00AD2EE9 /* UIImage.swift in Sources */,
 				5254468E2256FF0300AD2EE9 /* FloatingPoint.swift in Sources */,
+				52B510D722954C06003FE512 /* CIImage.swift in Sources */,
 				525446942256FF0B00AD2EE9 /* CoreVideo.swift in Sources */,
 				525446B22256FF2200AD2EE9 /* MLModel.swift in Sources */,
 				525446992256FF1200AD2EE9 /* CGSize.swift in Sources */,

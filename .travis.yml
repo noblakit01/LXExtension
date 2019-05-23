@@ -2,5 +2,5 @@ language: objective-c
 osx_image: xcode10.2
 
 script:
-- xcodebuild build -project lxextension.xcodeproj -scheme lxextension -sdk iphonesimulator
-- xcodebuild build -project lxextension.xcodeproj -scheme lxextension -sdk iphoneos
+- xcodebuild build -project lxextension/lxextension.xcodeproj -scheme lxextension -sdk iphonesimulator
+- xcodebuild build -project lxextension/lxextension.xcodeproj -scheme lxextension -sdk iphoneos

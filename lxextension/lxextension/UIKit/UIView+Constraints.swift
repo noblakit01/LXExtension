@@ -118,10 +118,27 @@ extension UIView {
     }
     
     @discardableResult
+    public func fitting(_ view: UIView, constant: CGFloat) -> UIView {
+        leftAnchor.constraint(equalTo: view.leftAnchor, constant: constant).isActive = true
+        topAnchor.constraint(equalTo: view.topAnchor, constant: constant).isActive = true
+        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        return self
+    }
+    
+    @discardableResult
     public func fittingExceptBottom(_ view: UIView) -> UIView {
         topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        return self
+    }
+    
+    @discardableResult
+    public func fittingExceptTop(_ view: UIView) -> UIView {
+        leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         return self
     }
     

@@ -34,6 +34,7 @@
 		525446B22256FF2200AD2EE9 /* MLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446B12256FF2200AD2EE9 /* MLModel.swift */; };
 		5257003A2292887E009311C2 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525700392292887E009311C2 /* UIView+Constraints.swift */; };
 		52B510D722954C06003FE512 /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B510D622954C06003FE512 /* CIImage.swift */; };
+		52C4CDCA229BD10F00D10B7F /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C4CDC9229BD10F00D10B7F /* UIEdgeInsets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		525446B12256FF2200AD2EE9 /* MLModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLModel.swift; sourceTree = "<group>"; };
 		525700392292887E009311C2 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		52B510D622954C06003FE512 /* CIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImage.swift; sourceTree = "<group>"; };
+		52C4CDC9229BD10F00D10B7F /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				5254469F2256FF1B00AD2EE9 /* UITextView.swift */,
 				525446A32256FF1B00AD2EE9 /* UIView.swift */,
 				525700392292887E009311C2 /* UIView+Constraints.swift */,
+				52C4CDC9229BD10F00D10B7F /* UIEdgeInsets.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				525446B22256FF2200AD2EE9 /* MLModel.swift in Sources */,
 				525446992256FF1200AD2EE9 /* CGSize.swift in Sources */,
 				525446A82256FF1C00AD2EE9 /* UITableView.swift in Sources */,
+				52C4CDCA229BD10F00D10B7F /* UIEdgeInsets.swift in Sources */,
 				525446A92256FF1C00AD2EE9 /* UITextView.swift in Sources */,
 				525446B02256FF1C00AD2EE9 /* UICollectionView.swift in Sources */,
 				525446AF2256FF1C00AD2EE9 /* UIFont.swift in Sources */,

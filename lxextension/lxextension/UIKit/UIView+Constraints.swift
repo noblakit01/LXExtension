@@ -143,6 +143,13 @@ extension UIView {
     }
     
     @discardableResult
+    public func fittingWidth(_ view: UIView) -> UIView {
+        leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        return self
+    }
+    
+    @discardableResult
     public func center(_ view: UIView) -> UIView {
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true

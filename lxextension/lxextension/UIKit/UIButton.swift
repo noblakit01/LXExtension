@@ -22,4 +22,14 @@ extension UIButton {
         }
     }
     
+    public convenience init(text: String, titleFont: UIFont, titleColor: UIColor, contentInsets: UIEdgeInsets) {
+        self.init(type: .system)
+        
+        setTitle(text, for: .normal)
+        setTitleColor(titleColor, for: .normal)
+        titleLabel?.font = titleFont
+        
+        contentEdgeInsets = contentInsets
+    }
+    
 }

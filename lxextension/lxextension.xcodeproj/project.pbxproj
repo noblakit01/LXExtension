@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521B31A522A8C62B006A6DA1 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521B31A422A8C62B006A6DA1 /* UIImageView.swift */; };
 		522526B2228AABE7008BDA1F /* PHAssetCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522526B1228AABE7008BDA1F /* PHAssetCollection.swift */; };
 		525446742256FE6A00AD2EE9 /* lxextension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5254466A2256FE6900AD2EE9 /* lxextension.framework */; };
 		525446792256FE6A00AD2EE9 /* lxextensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446782256FE6A00AD2EE9 /* lxextensionTests.swift */; };
@@ -39,6 +40,7 @@
 		52A8E64022A652CD00D23D68 /* UIView+Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8E63F22A652CD00D23D68 /* UIView+Shape.swift */; };
 		52B510D722954C06003FE512 /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B510D622954C06003FE512 /* CIImage.swift */; };
 		52C4CDCA229BD10F00D10B7F /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C4CDC9229BD10F00D10B7F /* UIEdgeInsets.swift */; };
+		52EFF1BD22AA611B005DEC87 /* UIView+Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EFF1BC22AA611B005DEC87 /* UIView+Priority.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		521B31A422A8C62B006A6DA1 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		522526B1228AABE7008BDA1F /* PHAssetCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAssetCollection.swift; sourceTree = "<group>"; };
 		5254466A2256FE6900AD2EE9 /* lxextension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lxextension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5254466D2256FE6900AD2EE9 /* lxextension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lxextension.h; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		52A8E63F22A652CD00D23D68 /* UIView+Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shape.swift"; sourceTree = "<group>"; };
 		52B510D622954C06003FE512 /* CIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImage.swift; sourceTree = "<group>"; };
 		52C4CDC9229BD10F00D10B7F /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
+		52EFF1BC22AA611B005DEC87 /* UIView+Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Priority.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,11 +185,13 @@
 				5254469F2256FF1B00AD2EE9 /* UITextView.swift */,
 				525446A32256FF1B00AD2EE9 /* UIView.swift */,
 				525700392292887E009311C2 /* UIView+Constraints.swift */,
+				52EFF1BC22AA611B005DEC87 /* UIView+Priority.swift */,
 				52A8E63F22A652CD00D23D68 /* UIView+Shape.swift */,
 				52A8E63D22A64F9600D23D68 /* UIView+Stack.swift */,
 				52C4CDC9229BD10F00D10B7F /* UIEdgeInsets.swift */,
 				52A8E63722A6195100D23D68 /* UILabel.swift */,
 				52A8E63922A646E400D23D68 /* UIStackView.swift */,
+				521B31A422A8C62B006A6DA1 /* UIImageView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -350,10 +356,12 @@
 				525446B22256FF2200AD2EE9 /* MLModel.swift in Sources */,
 				525446992256FF1200AD2EE9 /* CGSize.swift in Sources */,
 				52A8E63A22A646E400D23D68 /* UIStackView.swift in Sources */,
+				52EFF1BD22AA611B005DEC87 /* UIView+Priority.swift in Sources */,
 				525446A82256FF1C00AD2EE9 /* UITableView.swift in Sources */,
 				52C4CDCA229BD10F00D10B7F /* UIEdgeInsets.swift in Sources */,
 				525446A92256FF1C00AD2EE9 /* UITextView.swift in Sources */,
 				525446B02256FF1C00AD2EE9 /* UICollectionView.swift in Sources */,
+				521B31A522A8C62B006A6DA1 /* UIImageView.swift in Sources */,
 				52A8E63822A6195100D23D68 /* UILabel.swift in Sources */,
 				525446AF2256FF1C00AD2EE9 /* UIFont.swift in Sources */,
 				5254469B2256FF1200AD2EE9 /* CGPoint.swift in Sources */,

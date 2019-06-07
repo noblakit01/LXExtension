@@ -14,6 +14,7 @@ extension UILabel {
         self.init(frame: .zero)
         
         self.text = text
+        translatesAutoresizingMaskIntoConstraints = false
     }
     
     public convenience init(text: String = "", font: UIFont, textColor: UIColor) {
@@ -26,6 +27,12 @@ extension UILabel {
     public convenience init(text: String = "", font: UIFont, textColor: UIColor, textAlignment: NSTextAlignment) {
         self.init(text: text, font: font, textColor: textColor)
         self.textAlignment = textAlignment
+    }
+    
+    public convenience init(text: String = "", font: UIFont, textColor: UIColor, textAlignment: NSTextAlignment, numberOfLines: Int) {
+        self.init(text: text, font: font, textColor: textColor)
+        self.textAlignment = textAlignment
+        self.numberOfLines = numberOfLines
     }
     
 }

@@ -49,6 +49,14 @@ extension UIView {
     }
     
     @discardableResult
+    public func width(equal views: UIView...) -> UIView {
+        for view in views {
+            width(view.widthAnchor)
+        }
+        return self
+    }
+    
+    @discardableResult
     public func height(_ constant: CGFloat) -> UIView {
         heightAnchor.constraint(equalToConstant: constant).isActive = true
         return self

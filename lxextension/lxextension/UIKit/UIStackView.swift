@@ -27,6 +27,7 @@ extension UIStackView {
         self.spacing = spacing
         self.alignment = alignment
         self.distribution = distribution
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
     
 }

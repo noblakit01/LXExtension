@@ -22,7 +22,7 @@ extension UIButton {
         }
     }
     
-    public convenience init(text: String, titleFont: UIFont, titleColor: UIColor, contentInsets: UIEdgeInsets) {
+    public convenience init(text: String, titleFont: UIFont, titleColor: UIColor, contentInsets: UIEdgeInsets = UIEdgeInsets.zero) {
         self.init(type: .system)
         
         setTitle(text, for: .normal)
@@ -30,6 +30,13 @@ extension UIButton {
         titleLabel?.font = titleFont
         
         contentEdgeInsets = contentInsets
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    public convenience init(image: UIImage, type: UIButton.ButtonType = UIButton.ButtonType.system) {
+        self.init(type: type)
+        
+        setImage(image, for: .normal)
     }
     
 }

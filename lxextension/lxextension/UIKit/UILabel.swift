@@ -36,3 +36,14 @@ extension UILabel {
     }
     
 }
+
+extension UILabel {
+    
+    @discardableResult
+    public func setMinimumScaleFactor(_ factor: CGFloat) -> UIView {
+        minimumScaleFactor = factor
+        adjustsFontSizeToFitWidth = true
+        return self
+    }
+    
+}

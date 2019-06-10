@@ -16,6 +16,19 @@ extension UIStackView {
         self.axis = axis
     }
     
+    public convenience init(_ views: [UIView],
+                            axis: NSLayoutConstraint.Axis = .horizontal,
+                            spacing: CGFloat = 0,
+                            alignment: UIStackView.Alignment = .fill,
+                            distribution: UIStackView.Distribution = .fill) {
+        self.init(arrangedSubviews: views)
+        self.axis = axis
+        self.spacing = spacing
+        self.alignment = alignment
+        self.distribution = distribution
+        self.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
     public convenience init(_ views: UIView...,
         axis: NSLayoutConstraint.Axis = .horizontal,
         spacing: CGFloat = 0,

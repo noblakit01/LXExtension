@@ -84,6 +84,14 @@ extension UIView {
     }
     
     @discardableResult
+    public func height(equal views: UIView...) -> UIView {
+        for view in views {
+            height(view.heightAnchor)
+        }
+        return self
+    }
+    
+    @discardableResult
     public func leading(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> UIView {
         leadingAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
         return self

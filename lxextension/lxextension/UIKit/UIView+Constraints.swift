@@ -8,23 +8,38 @@
 
 import UIKit
 
-@available(iOS 11.0, *)
 extension UIView {
     
     public var topSafeAreaAnchor: NSLayoutYAxisAnchor {
-        return safeAreaLayoutGuide.topAnchor
+        if #available(iOS 11.0, *) {
+            return safeAreaLayoutGuide.topAnchor
+        } else {
+            return topAnchor
+        }
     }
     
     public var bottomSafeAreaAnchor: NSLayoutYAxisAnchor {
-        return safeAreaLayoutGuide.bottomAnchor
+        if #available(iOS 11.0, *) {
+            return safeAreaLayoutGuide.bottomAnchor
+        } else {
+            return bottomAnchor
+        }
     }
     
     public var trailingSafeAreaAnchor: NSLayoutXAxisAnchor {
-        return safeAreaLayoutGuide.trailingAnchor
+        if #available(iOS 11.0, *) {
+            return safeAreaLayoutGuide.trailingAnchor
+        } else {
+            return trailingAnchor
+        }
     }
     
     public var leadingSafeAreaAnchor: NSLayoutXAxisAnchor {
-        return safeAreaLayoutGuide.leadingAnchor
+        if #available(iOS 11.0, *) {
+            return safeAreaLayoutGuide.leadingAnchor
+        } else {
+            return leadingAnchor
+        }
     }
 }
 

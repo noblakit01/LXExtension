@@ -26,4 +26,11 @@ extension UIView {
         return view
     }
     
+    @discardableResult
+    public func corner(with radius: CGFloat) -> UIView {
+        layer.cornerRadius = radius
+        clipsToBounds = true
+        return self
+    }
+    
 }

@@ -24,6 +24,11 @@ extension UILabel {
         self.textColor = textColor
     }
     
+    public convenience init(text: String = "", font: UIFont, textColor: UIColor, numberOfLines: Int) {
+        self.init(text: text, font: font, textColor: textColor)
+        self.numberOfLines = numberOfLines
+    }
+    
     public convenience init(text: String = "", font: UIFont, textColor: UIColor, textAlignment: NSTextAlignment) {
         self.init(text: text, font: font, textColor: textColor)
         self.textAlignment = textAlignment

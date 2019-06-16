@@ -37,6 +37,13 @@ extension UIButton {
         self.init(type: type)
         
         setImage(image, for: .normal)
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    public convenience init(image: UIImage, type: UIButton.ButtonType = UIButton.ButtonType.system, contentInsets: UIEdgeInsets = UIEdgeInsets.zero) {
+        self.init(image: image, type: type)
+        
+        contentEdgeInsets = contentInsets
     }
     
 }

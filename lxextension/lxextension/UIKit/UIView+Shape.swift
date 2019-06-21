@@ -33,4 +33,14 @@ extension UIView {
         return self
     }
     
+    public class func circle(color: UIColor, radius: CGFloat = 2) -> UIView {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = color
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.aspect()
+            .width(radius)
+            .corner(with: radius / 2)
+        return view
+    }
+    
 }

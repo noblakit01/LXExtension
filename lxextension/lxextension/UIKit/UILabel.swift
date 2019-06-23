@@ -40,15 +40,20 @@ extension UILabel {
         self.numberOfLines = numberOfLines
     }
     
-}
-
-extension UILabel {
-    
-    @discardableResult
-    public func setMinimumScaleFactor(_ factor: CGFloat) -> UIView {
-        minimumScaleFactor = factor
-        adjustsFontSizeToFitWidth = true
-        return self
+    public convenience init(text: String,
+                            normalAttributes: [NSAttributedString.Key : Any],
+                            highlight texts: [String],
+                            highlightAttributes: [NSAttributedString.Key : Any]) {
+        self.init(frame: .zero)
+        let attributeString = NSMutableAttributedString(string: text, attributes: normalAttributes)
+        for highlightText in texts {
+            guard let range = text.range(of: highlightText) else {
+                continue
+            }
+            attributeString.addAttributes(highlightAttributes, range: NSRange(range, in: text))
+        }
+        self.attributedText = attributeString
+        translatesAutoresizingMaskIntoConstraints = false
     }
     
 }

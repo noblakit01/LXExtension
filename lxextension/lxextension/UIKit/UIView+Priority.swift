@@ -16,4 +16,10 @@ extension UIView {
         return self
     }
     
+    @discardableResult
+    public func setHugging(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> UIView {
+        setContentHuggingPriority(priority, for: axis)
+        return self
+    }
+    
 }

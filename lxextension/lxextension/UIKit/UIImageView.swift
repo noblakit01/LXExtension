@@ -23,4 +23,10 @@ extension UIImageView {
         self.contentMode = contentMode
     }
     
+    public convenience init(contentMode: UIView.ContentMode) {
+        self.init()
+        
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+    
 }

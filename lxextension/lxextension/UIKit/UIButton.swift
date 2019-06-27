@@ -22,6 +22,16 @@ extension UIButton {
         }
     }
     
+    public convenience init(type: UIButton.ButtonType, text: String, titleFont: UIFont, titleColor: UIColor) {
+        self.init(type: type)
+        
+        setTitle(text, for: .normal)
+        setTitleColor(titleColor, for: .normal)
+        titleLabel?.font = titleFont
+        
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+    
     public convenience init(text: String, titleFont: UIFont, titleColor: UIColor, contentInsets: UIEdgeInsets = UIEdgeInsets.zero) {
         self.init(type: .system)
         

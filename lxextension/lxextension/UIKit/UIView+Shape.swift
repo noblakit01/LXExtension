@@ -33,6 +33,15 @@ extension UIView {
         return self
     }
     
+    @discardableResult
+    public func roundCorners(corners: UIRectCorner, radius: CGFloat) -> UIView {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
+        return self
+    }
+    
     public class func circle(color: UIColor, radius: CGFloat = 2) -> UIView {
         let view = UIView(frame: .zero)
         view.backgroundColor = color

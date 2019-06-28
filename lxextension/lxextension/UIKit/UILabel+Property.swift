@@ -8,30 +8,36 @@
 
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     
     @discardableResult
-    public func setMinimumScale(_ factor: CGFloat) -> UIView {
+    func setMinimumScale(_ factor: CGFloat) -> UILabel {
         minimumScaleFactor = factor
         adjustsFontSizeToFitWidth = true
         return self
     }
     
     @discardableResult
-    public func setFont(_ font: UIFont) -> UIView {
+    func setFont(_ font: UIFont) -> UILabel {
         self.font = font
         return self
     }
     
     @discardableResult
-    public func setColor(_ color: UIColor) -> UIView {
+    func setColor(_ color: UIColor) -> UILabel {
         self.textColor = color
         return self
     }
     
     @discardableResult
-    public func setNumberOfLines(_ lines: Int) -> UIView {
+    func setNumberOfLines(_ lines: Int) -> UILabel {
         numberOfLines = lines
+        return self
+    }
+    
+    @discardableResult
+    func set(textAlignment: NSTextAlignment) -> UILabel {
+        self.textAlignment = textAlignment
         return self
     }
     

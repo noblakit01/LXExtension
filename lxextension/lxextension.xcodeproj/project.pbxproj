@@ -34,6 +34,7 @@
 		525446B02256FF1C00AD2EE9 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446A62256FF1C00AD2EE9 /* UICollectionView.swift */; };
 		525446B22256FF2200AD2EE9 /* MLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525446B12256FF2200AD2EE9 /* MLModel.swift */; };
 		5257003A2292887E009311C2 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525700392292887E009311C2 /* UIView+Constraints.swift */; };
+		52876BFE22C5C6D6009ADB70 /* UIView+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52876BFD22C5C6D6009ADB70 /* UIView+Property.swift */; };
 		52A8E63822A6195100D23D68 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8E63722A6195100D23D68 /* UILabel.swift */; };
 		52A8E63A22A646E400D23D68 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8E63922A646E400D23D68 /* UIStackView.swift */; };
 		52A8E63E22A64F9600D23D68 /* UIView+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8E63D22A64F9600D23D68 /* UIView+Stack.swift */; };
@@ -85,6 +86,7 @@
 		525446A62256FF1C00AD2EE9 /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		525446B12256FF2200AD2EE9 /* MLModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLModel.swift; sourceTree = "<group>"; };
 		525700392292887E009311C2 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		52876BFD22C5C6D6009ADB70 /* UIView+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Property.swift"; sourceTree = "<group>"; };
 		52A8E63722A6195100D23D68 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		52A8E63922A646E400D23D68 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		52A8E63D22A64F9600D23D68 /* UIView+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Stack.swift"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				525446A22256FF1B00AD2EE9 /* UITextField.swift */,
 				5254469F2256FF1B00AD2EE9 /* UITextView.swift */,
 				525446A32256FF1B00AD2EE9 /* UIView.swift */,
+				52876BFD22C5C6D6009ADB70 /* UIView+Property.swift */,
 				525700392292887E009311C2 /* UIView+Constraints.swift */,
 				52EFF1BC22AA611B005DEC87 /* UIView+Priority.swift */,
 				52A8E63F22A652CD00D23D68 /* UIView+Shape.swift */,
@@ -351,6 +354,7 @@
 				525446932256FF0B00AD2EE9 /* CVPixelBuffer.swift in Sources */,
 				525446AA2256FF1C00AD2EE9 /* UIColor.swift in Sources */,
 				525446AC2256FF1C00AD2EE9 /* UITextField.swift in Sources */,
+				52876BFE22C5C6D6009ADB70 /* UIView+Property.swift in Sources */,
 				525446A72256FF1C00AD2EE9 /* UIImage.swift in Sources */,
 				5254468E2256FF0300AD2EE9 /* FloatingPoint.swift in Sources */,
 				52B510D722954C06003FE512 /* CIImage.swift in Sources */,

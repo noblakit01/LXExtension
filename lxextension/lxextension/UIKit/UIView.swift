@@ -28,6 +28,13 @@ extension UIView {
         }
     }
     
+    public convenience init(color: UIColor) {
+        self.init(frame: .zero)
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = color
+    }
+    
     @available(iOS 9.0, *)
     func startLoading() -> UIView {
         let view = UIView()

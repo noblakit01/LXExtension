@@ -43,6 +43,7 @@
 		52C4CDCA229BD10F00D10B7F /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C4CDC9229BD10F00D10B7F /* UIEdgeInsets.swift */; };
 		52EFF1BD22AA611B005DEC87 /* UIView+Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EFF1BC22AA611B005DEC87 /* UIView+Priority.swift */; };
 		74247D7E22BFE7BD00E6923C /* UILabel+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74247D7D22BFE7BD00E6923C /* UILabel+Property.swift */; };
+		74247DFC22CBBB7900E6923C /* UIButton+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74247DFB22CBBB7900E6923C /* UIButton+Property.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		52C4CDC9229BD10F00D10B7F /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		52EFF1BC22AA611B005DEC87 /* UIView+Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Priority.swift"; sourceTree = "<group>"; };
 		74247D7D22BFE7BD00E6923C /* UILabel+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Property.swift"; sourceTree = "<group>"; };
+		74247DFB22CBBB7900E6923C /* UIButton+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Property.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,10 +181,12 @@
 			isa = PBXGroup;
 			children = (
 				525446A42256FF1C00AD2EE9 /* UIButton.swift */,
+				74247DFB22CBBB7900E6923C /* UIButton+Property.swift */,
 				525446A62256FF1C00AD2EE9 /* UICollectionView.swift */,
 				525446A02256FF1B00AD2EE9 /* UIColor.swift */,
 				525446A52256FF1C00AD2EE9 /* UIFont.swift */,
 				5254469D2256FF1B00AD2EE9 /* UIImage.swift */,
+				521B31A422A8C62B006A6DA1 /* UIImageView.swift */,
 				525446A12256FF1B00AD2EE9 /* UIScrollView.swift */,
 				5254469E2256FF1B00AD2EE9 /* UITableView.swift */,
 				525446A22256FF1B00AD2EE9 /* UITextField.swift */,
@@ -197,7 +201,6 @@
 				52A8E63722A6195100D23D68 /* UILabel.swift */,
 				74247D7D22BFE7BD00E6923C /* UILabel+Property.swift */,
 				52A8E63922A646E400D23D68 /* UIStackView.swift */,
-				521B31A422A8C62B006A6DA1 /* UIImageView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				525446932256FF0B00AD2EE9 /* CVPixelBuffer.swift in Sources */,
 				525446AA2256FF1C00AD2EE9 /* UIColor.swift in Sources */,
 				525446AC2256FF1C00AD2EE9 /* UITextField.swift in Sources */,
+				74247DFC22CBBB7900E6923C /* UIButton+Property.swift in Sources */,
 				52876BFE22C5C6D6009ADB70 /* UIView+Property.swift in Sources */,
 				525446A72256FF1C00AD2EE9 /* UIImage.swift in Sources */,
 				5254468E2256FF0300AD2EE9 /* FloatingPoint.swift in Sources */,

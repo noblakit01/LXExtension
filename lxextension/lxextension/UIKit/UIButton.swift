@@ -7,9 +7,9 @@
 
 import UIKit
 
-extension UIButton {
+public extension UIButton {
     
-    public func adjustContentOffset() {
+    func adjustContentOffset() {
         let spacing: CGFloat = 4.0
         
         if let imageView = imageView,
@@ -22,7 +22,7 @@ extension UIButton {
         }
     }
     
-    public convenience init(type: UIButton.ButtonType, text: String, titleFont: UIFont, titleColor: UIColor) {
+    convenience init(type: UIButton.ButtonType, text: String, titleFont: UIFont, titleColor: UIColor) {
         self.init(type: type)
         
         setTitle(text, for: .normal)
@@ -32,10 +32,9 @@ extension UIButton {
         translatesAutoresizingMaskIntoConstraints = false
     }
     
-    public convenience init(text: String, titleFont: UIFont, titleColor: UIColor, contentInsets: UIEdgeInsets = UIEdgeInsets.zero) {
+    convenience init(text: String, titleFont: UIFont, titleColor: UIColor, contentInsets: UIEdgeInsets = UIEdgeInsets.zero) {
         self.init(type: .system)
         
-        setTitle(text, for: .normal)
         setTitleColor(titleColor, for: .normal)
         titleLabel?.font = titleFont
         
@@ -43,17 +42,19 @@ extension UIButton {
         translatesAutoresizingMaskIntoConstraints = false
     }
     
-    public convenience init(image: UIImage, type: UIButton.ButtonType = UIButton.ButtonType.system) {
-        self.init(type: type)
-        
-        setImage(image, for: .normal)
-        translatesAutoresizingMaskIntoConstraints = false
-    }
-    
-    public convenience init(image: UIImage, type: UIButton.ButtonType = UIButton.ButtonType.system, contentInsets: UIEdgeInsets = UIEdgeInsets.zero) {
-        self.init(image: image, type: type)
+    convenience init(image: UIImage, type: UIButton.ButtonType = UIButton.ButtonType.system, contentInsets: UIEdgeInsets = UIEdgeInsets.zero) {
+        self.init(type: type, text: "", image: image)
         
         contentEdgeInsets = contentInsets
+    }
+    
+    convenience init(type: UIButton.ButtonType = UIButton.ButtonType.system, text: String = "", image: UIImage? = nil) {
+        self.init(type: type)
+        
+        setTitle(text, for: .normal)
+        setImage(image, for: .normal)
+        
+        translatesAutoresizingMaskIntoConstraints = false
     }
     
 }

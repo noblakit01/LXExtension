@@ -16,4 +16,10 @@ public extension UIView {
         return self
     }
     
+    @discardableResult
+    func set(backgroundColor: UIColor) -> UIView {
+        self.backgroundColor = backgroundColor
+        return self
+    }
+    
 }

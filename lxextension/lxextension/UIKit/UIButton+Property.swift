@@ -44,4 +44,10 @@ public extension UIButton {
         return self
     }
     
+    @discardableResult
+    func set(_ titleColor: UIColor) -> UIButton {
+        setTitleColor(titleColor, for: .normal)
+        return self
+    }
+    
 }

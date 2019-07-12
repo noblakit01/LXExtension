@@ -35,6 +35,7 @@ public extension UIButton {
     convenience init(text: String, titleFont: UIFont, titleColor: UIColor, contentInsets: UIEdgeInsets = UIEdgeInsets.zero) {
         self.init(type: .system)
         
+        setTitle(text, for: .normal)
         setTitleColor(titleColor, for: .normal)
         titleLabel?.font = titleFont
         

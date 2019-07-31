@@ -7,9 +7,17 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
     
-    public var hadValue: Bool {
+    convenience init(font: UIFont, textColor: UIColor) {
+        self.init(frame: .zero)
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        self.font = font
+        self.textColor = textColor
+    }
+    
+    var hadValue: Bool {
         return text != nil && text!.count > 0
     }
     

@@ -8,16 +8,16 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
     @discardableResult
-    public func setCompressionResistancePriority(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> UIView {
+    func setCompressionResistancePriority(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> UIView {
         setContentCompressionResistancePriority(priority, for: axis)
         return self
     }
     
     @discardableResult
-    public func setHugging(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> UIView {
+    func setHugging(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> UIView {
         setContentHuggingPriority(priority, for: axis)
         return self
     }

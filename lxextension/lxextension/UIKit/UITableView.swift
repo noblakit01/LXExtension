@@ -19,6 +19,10 @@ public extension UITableView {
         register(nib, forCellReuseIdentifier: cell.identifier)
     }
     
+    func registerClassHeaderFooter(_ view: UIView.Type) {
+        register(view, forHeaderFooterViewReuseIdentifier: view.identifier)
+    }
+    
     func registerHeaderFooterView(_ view: UIView.Type) {
         let nib = view.nib
         register(nib, forHeaderFooterViewReuseIdentifier: view.identifier)

@@ -35,7 +35,7 @@ public extension UITableView {
         return cell
     }
     
-    func dequeueReusableView<T: UIView>(_ view: UIView.Type) -> T {
+    func dequeueReusableView<T: UIView>(_ view: T.Type) -> T {
         guard let view = dequeueReusableHeaderFooterView(withIdentifier: view.identifier) as? T else {
             fatalError("Can't dequeue reusable view with \(T.description())")
         }

@@ -13,9 +13,9 @@ let secondPerMinute = 60
 let minutePerHour = 60
 let hourPerDay = 24
 
-extension Date {
+public extension Date {
     
-    public init?(string: String?, format: String) {
+    init?(string: String?, format: String) {
         guard let string = string else {
             return nil
         }
@@ -28,15 +28,15 @@ extension Date {
         self = date
     }
     
-    public init(milliSecondsSince1970: Int) {
+    init(milliSecondsSince1970: Int) {
         self = Date(timeIntervalSince1970: TimeInterval(milliSecondsSince1970 / 1000))
     }
     
-    public var millisecondsSince1970:Int {
+    var millisecondsSince1970:Int {
         return Int((timeIntervalSince1970 * 1000.0).rounded())
     }
     
-    public var periodConvenient: String {
+    var periodConvenient: String {
         let curDate = Date()
         let denta = curDate.timeIntervalSince(self)
         
@@ -77,7 +77,69 @@ extension Date {
         return dateFormatter.string(from: self)
     }
     
-    public func string(dateFormat format: String) -> String? {
+    var dateConvenientText: String {
+        if isInToday {
+            return "TODAY"
+        }
+        if isInYesterday {
+            return "YESTERDAY"
+        }
+        let dateFormatter = DateFormatter()
+        if isInThisWeek {
+            dateFormatter.dateFormat = "EEEE"
+        } else if isInThisYear {
+            dateFormatter.dateFormat = "MMM d"
+        } else {
+            dateFormatter.dateFormat = "MMM d, yyyy"
+        }
+        return dateFormatter.string(from: self)
+    }
+    
+    func isInSameWeek(date: Date) -> Bool {
+        return Calendar.current.isDate(self, equalTo: date, toGranularity: .weekOfYear)
+    }
+    
+    func isInSameMonth(date: Date) -> Bool {
+        return Calendar.current.isDate(self, equalTo: date, toGranularity: .month)
+    }
+    
+    func isInSameYear(date: Date) -> Bool {
+        return Calendar.current.isDate(self, equalTo: date, toGranularity: .year)
+    }
+    
+    func isInSameDay(date: Date) -> Bool {
+        return Calendar.current.isDate(self, equalTo: date, toGranularity: .day)
+    }
+    
+    var isInThisYear: Bool {
+        return isInSameYear(date: Date())
+    }
+    
+    var isInThisWeek: Bool {
+        return isInSameWeek(date: Date())
+    }
+    
+    var isInYesterday: Bool {
+        return Calendar.current.isDateInYesterday(self)
+    }
+    
+    var isInToday: Bool {
+        return Calendar.current.isDateInToday(self)
+    }
+    
+    var isInTomorrow: Bool {
+        return Calendar.current.isDateInTomorrow(self)
+    }
+    
+    var isInTheFuture: Bool {
+        return Date() < self
+    }
+    
+    var isInThePast: Bool {
+        return self < Date()
+    }
+    
+    func string(dateFormat format: String) -> String? {
         let dateFormater = DateFormatter()
         dateFormater.dateFormat = format
         return dateFormater.string(from: self)

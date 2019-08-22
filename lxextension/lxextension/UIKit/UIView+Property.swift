@@ -22,4 +22,10 @@ public extension UIView {
         return self
     }
     
+    @discardableResult
+    func set(tint color: UIColor) -> UIView {
+        self.tintColor = color
+        return self
+    }
+    
 }

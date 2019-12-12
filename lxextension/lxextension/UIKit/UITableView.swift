@@ -42,4 +42,10 @@ public extension UITableView {
         return view
     }
     
+    func reloadDataWithLayout() {
+        reloadData()
+        setNeedsLayout()
+        layoutIfNeeded()
+    }
+    
 }

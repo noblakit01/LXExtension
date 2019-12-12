@@ -8,13 +8,19 @@
 
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
     
-    public func indexPathsForElements(in rect: CGRect) -> [IndexPath] {
+    func indexPathsForElements(in rect: CGRect) -> [IndexPath] {
         guard let allLayoutAttributes = collectionViewLayout.layoutAttributesForElements(in: rect) else {
             return []
         }
         return allLayoutAttributes.map { $0.indexPath }
+    }
+    
+    func reloadDataWithLayout() {
+        reloadData()
+        setNeedsLayout()
+        layoutIfNeeded()
     }
     
 }

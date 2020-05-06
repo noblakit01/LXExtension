@@ -44,8 +44,13 @@
 		52EFF1BD22AA611B005DEC87 /* UIView+Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EFF1BC22AA611B005DEC87 /* UIView+Priority.swift */; };
 		52FD47A622D34BC200A2D03A /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD47A522D34BC200A2D03A /* Encodable.swift */; };
 		52FD47A822D34D8D00A2D03A /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD47A722D34D8D00A2D03A /* Decodable.swift */; };
+		7403262D2460566500DC1181 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403262C2460566500DC1181 /* UIViewController.swift */; };
+		7403262F246057E300DC1181 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403262E246057E300DC1181 /* String.swift */; };
+		7403264624616A9C00DC1181 /* AVCaptureVideoOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403264524616A9C00DC1181 /* AVCaptureVideoOrientation.swift */; };
+		7403264824616AEE00DC1181 /* AVCaptureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403264724616AED00DC1181 /* AVCaptureConnection.swift */; };
 		74247D7E22BFE7BD00E6923C /* UILabel+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74247D7D22BFE7BD00E6923C /* UILabel+Property.swift */; };
 		74247DFC22CBBB7900E6923C /* UIButton+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74247DFB22CBBB7900E6923C /* UIButton+Property.swift */; };
+		74710E8624545DC0006E5023 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,8 +104,13 @@
 		52EFF1BC22AA611B005DEC87 /* UIView+Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Priority.swift"; sourceTree = "<group>"; };
 		52FD47A522D34BC200A2D03A /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		52FD47A722D34D8D00A2D03A /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		7403262C2460566500DC1181 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		7403262E246057E300DC1181 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		7403264524616A9C00DC1181 /* AVCaptureVideoOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureVideoOrientation.swift; sourceTree = "<group>"; };
+		7403264724616AED00DC1181 /* AVCaptureConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureConnection.swift; sourceTree = "<group>"; };
 		74247D7D22BFE7BD00E6923C /* UILabel+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Property.swift"; sourceTree = "<group>"; };
 		74247DFB22CBBB7900E6923C /* UIButton+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Property.swift"; sourceTree = "<group>"; };
+		74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +161,7 @@
 		5254466C2256FE6900AD2EE9 /* lxextension */ = {
 			isa = PBXGroup;
 			children = (
+				7403264424616A8400DC1181 /* AVFoundation */,
 				522526B0228AABD1008BDA1F /* Photos */,
 				525446882256FEAE00AD2EE9 /* Foundation */,
 				52B510D522954BEC003FE512 /* CoreImage */,
@@ -205,6 +216,7 @@
 				52A8E63722A6195100D23D68 /* UILabel.swift */,
 				74247D7D22BFE7BD00E6923C /* UILabel+Property.swift */,
 				52A8E63922A646E400D23D68 /* UIStackView.swift */,
+				7403262C2460566500DC1181 /* UIViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -216,6 +228,7 @@
 				525446972256FF1200AD2EE9 /* CGPoint.swift */,
 				525446982256FF1200AD2EE9 /* CGRect.swift */,
 				525446952256FF1200AD2EE9 /* CGSize.swift */,
+				74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -238,6 +251,7 @@
 				525446892256FF0300AD2EE9 /* URL.swift */,
 				52FD47A522D34BC200A2D03A /* Encodable.swift */,
 				52FD47A722D34D8D00A2D03A /* Decodable.swift */,
+				7403262E246057E300DC1181 /* String.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -248,6 +262,15 @@
 				52B510D622954C06003FE512 /* CIImage.swift */,
 			);
 			path = CoreImage;
+			sourceTree = "<group>";
+		};
+		7403264424616A8400DC1181 /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				7403264524616A9C00DC1181 /* AVCaptureVideoOrientation.swift */,
+				7403264724616AED00DC1181 /* AVCaptureConnection.swift */,
+			);
+			path = AVFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7403264624616A9C00DC1181 /* AVCaptureVideoOrientation.swift in Sources */,
+				74710E8624545DC0006E5023 /* CGImagePropertyOrientation.swift in Sources */,
 				525446AB2256FF1C00AD2EE9 /* UIScrollView.swift in Sources */,
 				525446932256FF0B00AD2EE9 /* CVPixelBuffer.swift in Sources */,
 				525446AA2256FF1C00AD2EE9 /* UIColor.swift in Sources */,
@@ -373,6 +398,7 @@
 				52A8E64022A652CD00D23D68 /* UIView+Shape.swift in Sources */,
 				525446B22256FF2200AD2EE9 /* MLModel.swift in Sources */,
 				525446992256FF1200AD2EE9 /* CGSize.swift in Sources */,
+				7403264824616AEE00DC1181 /* AVCaptureConnection.swift in Sources */,
 				52A8E63A22A646E400D23D68 /* UIStackView.swift in Sources */,
 				52EFF1BD22AA611B005DEC87 /* UIView+Priority.swift in Sources */,
 				525446A82256FF1C00AD2EE9 /* UITableView.swift in Sources */,
@@ -380,10 +406,12 @@
 				525446A92256FF1C00AD2EE9 /* UITextView.swift in Sources */,
 				52FD47A622D34BC200A2D03A /* Encodable.swift in Sources */,
 				525446B02256FF1C00AD2EE9 /* UICollectionView.swift in Sources */,
+				7403262D2460566500DC1181 /* UIViewController.swift in Sources */,
 				521B31A522A8C62B006A6DA1 /* UIImageView.swift in Sources */,
 				52A8E63822A6195100D23D68 /* UILabel.swift in Sources */,
 				525446AF2256FF1C00AD2EE9 /* UIFont.swift in Sources */,
 				5254469B2256FF1200AD2EE9 /* CGPoint.swift in Sources */,
+				7403262F246057E300DC1181 /* String.swift in Sources */,
 				525446902256FF0300AD2EE9 /* BinaryInteger.swift in Sources */,
 				5254469A2256FF1200AD2EE9 /* CGImage.swift in Sources */,
 				525446AD2256FF1C00AD2EE9 /* UIView.swift in Sources */,

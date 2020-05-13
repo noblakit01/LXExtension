@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
-    public var topSafeAreaAnchor: NSLayoutYAxisAnchor {
+    var topSafeAreaAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide.topAnchor
         } else {
@@ -18,7 +18,7 @@ extension UIView {
         }
     }
     
-    public var bottomSafeAreaAnchor: NSLayoutYAxisAnchor {
+    var bottomSafeAreaAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide.bottomAnchor
         } else {
@@ -26,7 +26,7 @@ extension UIView {
         }
     }
     
-    public var trailingSafeAreaAnchor: NSLayoutXAxisAnchor {
+    var trailingSafeAreaAnchor: NSLayoutXAxisAnchor {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide.trailingAnchor
         } else {
@@ -34,13 +34,20 @@ extension UIView {
         }
     }
     
-    public var leadingSafeAreaAnchor: NSLayoutXAxisAnchor {
+    var leadingSafeAreaAnchor: NSLayoutXAxisAnchor {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide.leadingAnchor
         } else {
             return leadingAnchor
         }
     }
+    
+    @discardableResult
+    func set(autoresingMaskConstraint: Bool) -> Self {
+        translatesAutoresizingMaskIntoConstraints = autoresingMaskConstraint
+        return self
+    }
+    
 }
 
 public extension UIView {
@@ -128,9 +135,25 @@ public extension UIView {
     }
     
     @discardableResult
+    func centerX(_ view: UIView) -> UIView {
+        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        return self
+    }
+    
+    @discardableResult
     func centerX(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> UIView {
         centerXAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
         return self
+    }
+    
+    @discardableResult
+    func top(_ view: UIView, constant: CGFloat = 0.0) -> UIView {
+        return top(view.topAnchor, constant: constant)
+    }
+    
+    @discardableResult
+    func topSafeArea(_ view: UIView, constant: CGFloat = 0.0) -> UIView {
+        return top(view.topSafeAreaAnchor, constant: constant)
     }
     
     @discardableResult

@@ -11,19 +11,19 @@ import UIKit
 public extension UIView {
     
     @discardableResult
-    func set(alpha: CGFloat) -> UIView {
+    func set(alpha: CGFloat) -> Self {
         self.alpha = alpha
         return self
     }
     
     @discardableResult
-    func set(backgroundColor: UIColor) -> UIView {
+    func set(backgroundColor: UIColor) -> Self {
         self.backgroundColor = backgroundColor
         return self
     }
     
     @discardableResult
-    func set(tint color: UIColor) -> UIView {
+    func set(tint color: UIColor) -> Self {
         self.tintColor = color
         return self
     }

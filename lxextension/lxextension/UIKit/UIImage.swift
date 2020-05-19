@@ -8,26 +8,27 @@
 
 import UIKit
 
-extension UIImage {
-    public var bytes: Int {
+public extension UIImage {
+    
+    var bytes: Int {
         if let data = jpegData(compressionQuality: 0.8) {
             return data.count
         }
         return 0
     }
     
-    public var ratio: CGFloat {
+    var ratio: CGFloat {
         return size.width / size.height
     }
     
-    public convenience init?(name: String?) {
+    convenience init?(name: String?) {
         guard let name = name else {
             return nil
         }
         self.init(named: name)
     }
     
-    public convenience init?(pixelBuffer: CVPixelBuffer, context: CIContext = CIContext()) {
+    convenience init?(pixelBuffer: CVPixelBuffer, context: CIContext = CIContext()) {
         if let cgImage = CGImage.from(pixelBuffer: pixelBuffer, context: context) {
             self.init(cgImage: cgImage)
         } else {
@@ -35,7 +36,7 @@ extension UIImage {
         }
     }
     
-    public static func image(with color: UIColor, size: CGSize) -> UIImage {
+    static func image(with color: UIColor, size: CGSize) -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         color.setFill()
@@ -105,7 +106,7 @@ extension UIImage {
         return newImage
     }
     
-    public func crop(with rect: CGRect) -> UIImage? {
+    func crop(with rect: CGRect) -> UIImage? {
         let rectTransform : CGAffineTransform
         switch imageOrientation {
         case .left:
@@ -147,7 +148,7 @@ extension UIImage {
         return newImageRef != nil ? UIImage(cgImage: newImageRef!) : nil
     }
     
-    public func resize(with size: CGSize, interpolationQuality: CGInterpolationQuality = .high) -> UIImage? {
+    func resize(with size: CGSize, interpolationQuality: CGInterpolationQuality = .high) -> UIImage? {
         let drawTransposed = imageOrientation == .left || imageOrientation == .leftMirrored || imageOrientation == .right || imageOrientation == .rightMirrored
         
         let transform = transformForOrientation(size)
@@ -177,6 +178,10 @@ extension UIImage {
         }
         
         return transform
+    }
+    
+    func supportForTintColor() -> UIImage {
+       return withRenderingMode(.alwaysTemplate)
     }
     
 }

@@ -231,4 +231,11 @@ public extension UIView {
         return self
     }
     
+    @discardableResult
+    func topRight(of view: UIView) -> UIView {
+        topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        return self
+    }
+    
 }

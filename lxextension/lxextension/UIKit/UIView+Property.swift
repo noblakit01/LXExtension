@@ -28,4 +28,10 @@ public extension UIView {
         return self
     }
     
+    @discardableResult
+    func set(hidden: Bool) -> Self {
+        isHidden = hidden
+        return self
+    }
+    
 }

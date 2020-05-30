@@ -65,6 +65,13 @@ public extension UIView {
     }
     
     @discardableResult
+    func width(_ constant: CGFloat, constraint: inout NSLayoutConstraint?) -> Self {
+        constraint = widthAnchor.constraint(equalToConstant: constant)
+        constraint!.isActive = true
+        return self
+    }
+    
+    @discardableResult
     func width(_ dimension: NSLayoutDimension, multiplier: CGFloat = 1.0, constant: CGFloat = 0.0) -> UIView {
         widthAnchor.constraint(equalTo: dimension, multiplier: multiplier, constant: constant).isActive = true
         return self
@@ -141,6 +148,13 @@ public extension UIView {
     }
     
     @discardableResult
+    func centerX(_ view: UIView, constraint: inout NSLayoutConstraint?) -> Self {
+        constraint = centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        constraint!.isActive = true
+        return self
+    }
+    
+    @discardableResult
     func centerX(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> UIView {
         centerXAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
         return self
@@ -169,8 +183,22 @@ public extension UIView {
     }
     
     @discardableResult
+    func bottomSafeArea(_ view: UIView, constant: CGFloat = 0.0, constraint: inout NSLayoutConstraint?) -> Self {
+        constraint = bottomAnchor.constraint(equalTo: view.bottomSafeAreaAnchor, constant: constant)
+        constraint!.isActive = true
+        return self
+    }
+    
+    @discardableResult
     func centerY(_ anchor: NSLayoutYAxisAnchor, constant: CGFloat = 0.0) -> UIView {
         centerYAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
+        return self
+    }
+    
+    @discardableResult
+    func centerY(_ view: UIView, constraint: inout NSLayoutConstraint?) -> Self {
+        constraint = centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        constraint!.isActive = true
         return self
     }
     

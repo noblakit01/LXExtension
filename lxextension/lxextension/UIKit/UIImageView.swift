@@ -10,14 +10,14 @@ import UIKit
 
 public extension UIImageView {
     
-    convenience init(image: UIImage) {
+    convenience init(image: UIImage?) {
         self.init(frame: .zero)
         
         self.image = image
         translatesAutoresizingMaskIntoConstraints = false
     }
     
-    convenience init(image: UIImage, contentMode: UIView.ContentMode) {
+    convenience init(image: UIImage?, contentMode: UIView.ContentMode) {
         self.init(image: image)
         
         self.contentMode = contentMode

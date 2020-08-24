@@ -106,9 +106,14 @@ public extension UIView {
     }
     
     @discardableResult
-    func leading(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> UIView {
+    func leading(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> Self {
         leadingAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
         return self
+    }
+    
+    @discardableResult
+    func leading(_ view: UIView, constant: CGFloat = 0.0) -> Self {
+        return leading(view.leadingAnchor, constant: constant)
     }
     
     @discardableResult
@@ -130,9 +135,20 @@ public extension UIView {
     }
     
     @discardableResult
-    func trailingGreaterOrEqual(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> UIView {
+    func trailingGreaterOrEqual(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> Self {
         trailingAnchor.constraint(greaterThanOrEqualTo: anchor, constant: constant).isActive = true
         return self
+    }
+    
+    @discardableResult
+    func trailingLessOrEqual(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> Self {
+        trailingAnchor.constraint(lessThanOrEqualTo: anchor, constant: constant).isActive = true
+        return self
+    }
+    
+    @discardableResult
+    func trailingLessOrEqual(_ view: UIView, constant: CGFloat = 0.0) -> Self {
+        return trailingLessOrEqual(view.trailingAnchor, constant: constant)
     }
     
     @discardableResult
@@ -190,9 +206,14 @@ public extension UIView {
     }
     
     @discardableResult
-    func centerY(_ anchor: NSLayoutYAxisAnchor, constant: CGFloat = 0.0) -> UIView {
+    func centerY(_ anchor: NSLayoutYAxisAnchor, constant: CGFloat = 0.0) -> Self {
         centerYAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
         return self
+    }
+    
+    @discardableResult
+    func centerY(_ view: UIView) -> Self {
+        return centerY(view.centerYAnchor)
     }
     
     @discardableResult

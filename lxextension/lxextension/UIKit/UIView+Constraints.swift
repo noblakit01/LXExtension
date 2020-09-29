@@ -193,6 +193,16 @@ public extension UIView {
     }
     
     @discardableResult
+    func bottom(_ view: UIView, constant: CGFloat = 0.0) -> UIView {
+        return bottom(view.bottomAnchor, constant: constant)
+    }
+    
+    @discardableResult
+    func bottomSafeArea(_ view: UIView, constant: CGFloat = 0.0) -> UIView {
+        return bottom(view.bottomSafeAreaAnchor, constant: constant)
+    }
+    
+    @discardableResult
     func bottom(_ anchor: NSLayoutYAxisAnchor, constant: CGFloat = 0.0) -> UIView {
         bottomAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
         return self

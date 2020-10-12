@@ -34,4 +34,10 @@ public extension UIView {
         return self
     }
     
+    @discardableResult
+    func set(clipsToBounds: Bool) -> Self {
+        self.clipsToBounds = clipsToBounds
+        return self
+    }
+    
 }

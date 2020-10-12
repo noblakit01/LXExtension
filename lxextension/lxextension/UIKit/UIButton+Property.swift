@@ -10,7 +10,8 @@ import UIKit
 
 public extension UIButton {
     
-    func horizontal(_ spacing: CGFloat = 0.0) {
+    @discardableResult
+    func horizontal(_ spacing: CGFloat = 0.0) -> Self {
         if let imageView = imageView,
             let titleLabel = titleLabel {
             let imageSize = imageView.frame.size
@@ -19,6 +20,7 @@ public extension UIButton {
             titleEdgeInsets = UIEdgeInsets(top: 0, left: -imageSize.width, bottom: -(imageSize.height + spacing), right: 0)
             imageEdgeInsets = UIEdgeInsets(top: -(titleSize.height + spacing), left: 0, bottom: 0, right: -titleSize.width)
         }
+        return self
     }
     
     @discardableResult

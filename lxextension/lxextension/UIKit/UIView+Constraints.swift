@@ -284,6 +284,15 @@ public extension UIView {
     }
     
     @discardableResult
+    func fittingSafeArea(_ view: UIView, constant: CGFloat) -> Self {
+        leadingAnchor.constraint(equalTo: view.leadingSafeAreaAnchor, constant: constant).isActive = true
+        topAnchor.constraint(equalTo: view.topSafeAreaAnchor, constant: constant).isActive = true
+        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        return self
+    }
+    
+    @discardableResult
     func center(_ view: UIView) -> UIView {
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true

@@ -52,6 +52,7 @@
 		74247DFC22CBBB7900E6923C /* UIButton+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74247DFB22CBBB7900E6923C /* UIButton+Property.swift */; };
 		74710E8624545DC0006E5023 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */; };
 		74E7D4DA247E52F000A32448 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7D4D9247E52F000A32448 /* TimeInterval.swift */; };
+		74F3CAE525355A8C0007091F /* UITextField+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3CAE425355A8C0007091F /* UITextField+Property.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		74247DFB22CBBB7900E6923C /* UIButton+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Property.swift"; sourceTree = "<group>"; };
 		74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 		74E7D4D9247E52F000A32448 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		74F3CAE425355A8C0007091F /* UITextField+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Property.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				521B31A422A8C62B006A6DA1 /* UIImageView.swift */,
 				525446A12256FF1B00AD2EE9 /* UIScrollView.swift */,
 				5254469E2256FF1B00AD2EE9 /* UITableView.swift */,
+				74F3CAE425355A8C0007091F /* UITextField+Property.swift */,
 				525446A22256FF1B00AD2EE9 /* UITextField.swift */,
 				5254469F2256FF1B00AD2EE9 /* UITextView.swift */,
 				525446A32256FF1B00AD2EE9 /* UIView.swift */,
@@ -394,6 +397,7 @@
 				74247DFC22CBBB7900E6923C /* UIButton+Property.swift in Sources */,
 				74E7D4DA247E52F000A32448 /* TimeInterval.swift in Sources */,
 				52876BFE22C5C6D6009ADB70 /* UIView+Property.swift in Sources */,
+				74F3CAE525355A8C0007091F /* UITextField+Property.swift in Sources */,
 				525446A72256FF1C00AD2EE9 /* UIImage.swift in Sources */,
 				5254468E2256FF0300AD2EE9 /* FloatingPoint.swift in Sources */,
 				52B510D722954C06003FE512 /* CIImage.swift in Sources */,

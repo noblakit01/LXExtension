@@ -198,6 +198,17 @@ public extension UIView {
     }
     
     @discardableResult
+    func bottomLessThenOrEqual(_ anchor: NSLayoutYAxisAnchor, constant: CGFloat = 0.0) -> Self {
+        bottomAnchor.constraint(lessThanOrEqualTo: anchor, constant: constant).isActive = true
+        return self
+    }
+    
+    @discardableResult
+    func bottomLessThenOrEqual(_ view: UIView, constant: CGFloat = 0.0) -> Self {
+        return bottomLessThenOrEqual(view.bottomAnchor, constant: constant)
+    }
+    
+    @discardableResult
     func bottomSafeArea(_ view: UIView, constant: CGFloat = 0.0) -> UIView {
         return bottom(view.bottomSafeAreaAnchor, constant: constant)
     }

@@ -129,7 +129,12 @@ public extension UIView {
     }
     
     @discardableResult
-    func trailing(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> UIView {
+    func trailing(_ view: UIView, constant: CGFloat = 0.0) -> Self {
+        return trailing(view.trailingAnchor, constant: constant)
+    }
+    
+    @discardableResult
+    func trailing(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> Self {
         trailingAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
         return self
     }

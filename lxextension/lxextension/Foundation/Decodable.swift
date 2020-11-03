@@ -11,9 +11,19 @@ import Foundation
 public extension Decodable {
     
     init(from: Any) throws {
-        let data = try JSONSerialization.data(withJSONObject: from, options: [])
-        let decoder = JSONDecoder()
-        self = try decoder.decode(Self.self, from: data)
+        do {
+            let data = try JSONSerialization.data(withJSONObject: from, options: [])
+            let decoder = JSONDecoder()
+            do {
+                self = try decoder.decode(Self.self, from: data)
+            } catch (let error) {
+                print("Luan Decodable \(error.localizedDescription)")
+                throw error
+            }
+        } catch (let error) {
+            print("Luan Decodable \(error.localizedDescription)")
+            throw error
+        }
     }
     
 }

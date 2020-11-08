@@ -50,6 +50,7 @@
 		7403264824616AEE00DC1181 /* AVCaptureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403264724616AED00DC1181 /* AVCaptureConnection.swift */; };
 		74247D7E22BFE7BD00E6923C /* UILabel+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74247D7D22BFE7BD00E6923C /* UILabel+Property.swift */; };
 		74247DFC22CBBB7900E6923C /* UIButton+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74247DFB22CBBB7900E6923C /* UIButton+Property.swift */; };
+		7447D3402553FFE70005C368 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447D33F2553FFE70005C368 /* UserDefaults.swift */; };
 		74710E8624545DC0006E5023 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */; };
 		74E7D4DA247E52F000A32448 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7D4D9247E52F000A32448 /* TimeInterval.swift */; };
 		74F3CAE525355A8C0007091F /* UITextField+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3CAE425355A8C0007091F /* UITextField+Property.swift */; };
@@ -112,6 +113,7 @@
 		7403264724616AED00DC1181 /* AVCaptureConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureConnection.swift; sourceTree = "<group>"; };
 		74247D7D22BFE7BD00E6923C /* UILabel+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Property.swift"; sourceTree = "<group>"; };
 		74247DFB22CBBB7900E6923C /* UIButton+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Property.swift"; sourceTree = "<group>"; };
+		7447D33F2553FFE70005C368 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 		74E7D4D9247E52F000A32448 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		74F3CAE425355A8C0007091F /* UITextField+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Property.swift"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				52FD47A722D34D8D00A2D03A /* Decodable.swift */,
 				7403262E246057E300DC1181 /* String.swift */,
 				74E7D4D9247E52F000A32448 /* TimeInterval.swift */,
+				7447D33F2553FFE70005C368 /* UserDefaults.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				5254469A2256FF1200AD2EE9 /* CGImage.swift in Sources */,
 				525446AD2256FF1C00AD2EE9 /* UIView.swift in Sources */,
 				5254469C2256FF1200AD2EE9 /* CGRect.swift in Sources */,
+				7447D3402553FFE70005C368 /* UserDefaults.swift in Sources */,
 				522526B2228AABE7008BDA1F /* PHAssetCollection.swift in Sources */,
 				52A8E63E22A64F9600D23D68 /* UIView+Stack.swift in Sources */,
 				5257003A2292887E009311C2 /* UIView+Constraints.swift in Sources */,

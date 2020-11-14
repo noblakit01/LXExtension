@@ -21,4 +21,8 @@ public extension UITextField {
         return text != nil && text!.count > 0
     }
     
+    var textOrEmpty: String {
+        return text ?? ""
+    }
+    
 }

@@ -31,3 +31,12 @@ public func +=(left: inout CGPoint, right: CGPoint) {
 public func -=(left: inout CGPoint, right: CGPoint) {
     left = left - right
 }
+
+public extension CGPoint {
+    
+    func scaled(to size: CGSize) -> CGPoint {
+        return CGPoint(x: self.x * size.width,
+                       y: self.y * size.height)
+    }
+    
+}

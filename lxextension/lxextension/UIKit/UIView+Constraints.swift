@@ -92,6 +92,13 @@ public extension UIView {
     }
     
     @discardableResult
+    func height(_ constant: CGFloat, constraint: inout NSLayoutConstraint?) -> UIView {
+        constraint = heightAnchor.constraint(equalToConstant: constant)
+        constraint!.isActive = true
+        return self
+    }
+    
+    @discardableResult
     func height(_ dimension: NSLayoutDimension, multiplier: CGFloat = 1.0, constant: CGFloat = 0.0) -> UIView {
         heightAnchor.constraint(equalTo: dimension, multiplier: multiplier, constant: constant).isActive = true
         return self

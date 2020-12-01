@@ -17,11 +17,11 @@ public extension Decodable {
             do {
                 self = try decoder.decode(Self.self, from: data)
             } catch (let error) {
-                print("Luan Decodable \(error.localizedDescription)")
+                print("Luan Decodable \(error)")
                 throw error
             }
         } catch (let error) {
-            print("Luan Decodable \(error.localizedDescription)")
+            print("Luan Decodable \(error)")
             throw error
         }
     }

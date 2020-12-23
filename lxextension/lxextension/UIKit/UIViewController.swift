@@ -19,4 +19,12 @@ public extension UIViewController {
         presentErrorAlert(withTitle: String(format: title, error.code), message: error.localizedDescription)
     }
     
+    func dismiss(to viewController: UIViewController.Type) {
+        var controllToDismiss: UIViewController? = self
+        while controllToDismiss?.presentingViewController !== viewController && controllToDismiss?.presentingViewController != nil {
+            controllToDismiss = controllToDismiss?.presentingViewController
+        }
+        controllToDismiss?.dismiss(animated: true, completion: nil)
+    }
+    
 }

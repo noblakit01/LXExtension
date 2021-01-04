@@ -52,6 +52,7 @@
 		74247DFC22CBBB7900E6923C /* UIButton+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74247DFB22CBBB7900E6923C /* UIButton+Property.swift */; };
 		7443C4CF255A664F000955F9 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7443C4CE255A664F000955F9 /* Codable.swift */; };
 		7447D3402553FFE70005C368 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447D33F2553FFE70005C368 /* UserDefaults.swift */; };
+		74489A2E25A0749800CD0779 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74489A2D25A0749800CD0779 /* CALayer.swift */; };
 		74710E8624545DC0006E5023 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */; };
 		74E7D4DA247E52F000A32448 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7D4D9247E52F000A32448 /* TimeInterval.swift */; };
 		74F3CAE525355A8C0007091F /* UITextField+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3CAE425355A8C0007091F /* UITextField+Property.swift */; };
@@ -116,6 +117,7 @@
 		74247DFB22CBBB7900E6923C /* UIButton+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Property.swift"; sourceTree = "<group>"; };
 		7443C4CE255A664F000955F9 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		7447D33F2553FFE70005C368 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		74489A2D25A0749800CD0779 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 		74E7D4D9247E52F000A32448 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		74F3CAE425355A8C0007091F /* UITextField+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Property.swift"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		5254466C2256FE6900AD2EE9 /* lxextension */ = {
 			isa = PBXGroup;
 			children = (
+				74489A2C25A0744E00CD0779 /* CoreAnimation */,
 				7403264424616A8400DC1181 /* AVFoundation */,
 				522526B0228AABD1008BDA1F /* Photos */,
 				525446882256FEAE00AD2EE9 /* Foundation */,
@@ -283,6 +286,14 @@
 				7403264724616AED00DC1181 /* AVCaptureConnection.swift */,
 			);
 			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		74489A2C25A0744E00CD0779 /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				74489A2D25A0749800CD0779 /* CALayer.swift */,
+			);
+			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +448,7 @@
 				5257003A2292887E009311C2 /* UIView+Constraints.swift in Sources */,
 				5254468F2256FF0300AD2EE9 /* Date.swift in Sources */,
 				5254468D2256FF0300AD2EE9 /* URL.swift in Sources */,
+				74489A2E25A0749800CD0779 /* CALayer.swift in Sources */,
 				525446AE2256FF1C00AD2EE9 /* UIButton.swift in Sources */,
 				74247D7E22BFE7BD00E6923C /* UILabel+Property.swift in Sources */,
 			);

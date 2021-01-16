@@ -52,6 +52,7 @@
 		74247DFC22CBBB7900E6923C /* UIButton+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74247DFB22CBBB7900E6923C /* UIButton+Property.swift */; };
 		7443C4CF255A664F000955F9 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7443C4CE255A664F000955F9 /* Codable.swift */; };
 		7447D3402553FFE70005C368 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447D33F2553FFE70005C368 /* UserDefaults.swift */; };
+		744873E325B12F4600B5E554 /* AVAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744873E225B12F4600B5E554 /* AVAsset.swift */; };
 		74489A2E25A0749800CD0779 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74489A2D25A0749800CD0779 /* CALayer.swift */; };
 		744D0C5325A34C3D001A5BBA /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744D0C5225A34C3D001A5BBA /* Float.swift */; };
 		74710E8624545DC0006E5023 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */; };
@@ -118,6 +119,7 @@
 		74247DFB22CBBB7900E6923C /* UIButton+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Property.swift"; sourceTree = "<group>"; };
 		7443C4CE255A664F000955F9 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		7447D33F2553FFE70005C368 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		744873E225B12F4600B5E554 /* AVAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAsset.swift; sourceTree = "<group>"; };
 		74489A2D25A0749800CD0779 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		744D0C5225A34C3D001A5BBA /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
 		74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 			children = (
 				7403264524616A9C00DC1181 /* AVCaptureVideoOrientation.swift */,
 				7403264724616AED00DC1181 /* AVCaptureConnection.swift */,
+				744873E225B12F4600B5E554 /* AVAsset.swift */,
 			);
 			path = AVFoundation;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				521B31A522A8C62B006A6DA1 /* UIImageView.swift in Sources */,
 				744D0C5325A34C3D001A5BBA /* Float.swift in Sources */,
 				52A8E63822A6195100D23D68 /* UILabel.swift in Sources */,
+				744873E325B12F4600B5E554 /* AVAsset.swift in Sources */,
 				525446AF2256FF1C00AD2EE9 /* UIFont.swift in Sources */,
 				5254469B2256FF1200AD2EE9 /* CGPoint.swift in Sources */,
 				7403262F246057E300DC1181 /* String.swift in Sources */,

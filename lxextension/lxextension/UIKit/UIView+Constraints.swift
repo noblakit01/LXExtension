@@ -130,6 +130,11 @@ public extension UIView {
     }
     
     @discardableResult
+    func leadingSafeArea(_ view: UIView, constant: CGFloat = 0.0) -> Self {
+        return leading(view.leadingSafeAreaAnchor, constant: constant)
+    }
+    
+    @discardableResult
     func left(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> UIView {
         leftAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
         return self

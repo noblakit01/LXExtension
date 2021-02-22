@@ -55,6 +55,8 @@
 		744873E325B12F4600B5E554 /* AVAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744873E225B12F4600B5E554 /* AVAsset.swift */; };
 		74489A2E25A0749800CD0779 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74489A2D25A0749800CD0779 /* CALayer.swift */; };
 		744D0C5325A34C3D001A5BBA /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744D0C5225A34C3D001A5BBA /* Float.swift */; };
+		7462819625E2B6EE003641C1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462819525E2B6EE003641C1 /* GradientView.swift */; };
+		7462819C25E2B747003641C1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462819B25E2B747003641C1 /* BaseView.swift */; };
 		74710E8624545DC0006E5023 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */; };
 		74E7D4DA247E52F000A32448 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7D4D9247E52F000A32448 /* TimeInterval.swift */; };
 		74F3CAE525355A8C0007091F /* UITextField+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F3CAE425355A8C0007091F /* UITextField+Property.swift */; };
@@ -122,6 +124,8 @@
 		744873E225B12F4600B5E554 /* AVAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAsset.swift; sourceTree = "<group>"; };
 		74489A2D25A0749800CD0779 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		744D0C5225A34C3D001A5BBA /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		7462819525E2B6EE003641C1 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		7462819B25E2B747003641C1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		74710E8524545DC0006E5023 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 		74E7D4D9247E52F000A32448 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		74F3CAE425355A8C0007091F /* UITextField+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Property.swift"; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		5254466C2256FE6900AD2EE9 /* lxextension */ = {
 			isa = PBXGroup;
 			children = (
+				7462819425E2B6DC003641C1 /* Common Views */,
 				74489A2C25A0744E00CD0779 /* CoreAnimation */,
 				7403264424616A8400DC1181 /* AVFoundation */,
 				522526B0228AABD1008BDA1F /* Photos */,
@@ -300,6 +305,15 @@
 				74489A2D25A0749800CD0779 /* CALayer.swift */,
 			);
 			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		7462819425E2B6DC003641C1 /* Common Views */ = {
+			isa = PBXGroup;
+			children = (
+				7462819B25E2B747003641C1 /* BaseView.swift */,
+				7462819525E2B6EE003641C1 /* GradientView.swift */,
+			);
+			path = "Common Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +450,7 @@
 				52C4CDCA229BD10F00D10B7F /* UIEdgeInsets.swift in Sources */,
 				7443C4CF255A664F000955F9 /* Codable.swift in Sources */,
 				525446A92256FF1C00AD2EE9 /* UITextView.swift in Sources */,
+				7462819625E2B6EE003641C1 /* GradientView.swift in Sources */,
 				52FD47A622D34BC200A2D03A /* Encodable.swift in Sources */,
 				525446B02256FF1C00AD2EE9 /* UICollectionView.swift in Sources */,
 				7403262D2460566500DC1181 /* UIViewController.swift in Sources */,
@@ -447,6 +462,7 @@
 				5254469B2256FF1200AD2EE9 /* CGPoint.swift in Sources */,
 				7403262F246057E300DC1181 /* String.swift in Sources */,
 				525446902256FF0300AD2EE9 /* BinaryInteger.swift in Sources */,
+				7462819C25E2B747003641C1 /* BaseView.swift in Sources */,
 				5254469A2256FF1200AD2EE9 /* CGImage.swift in Sources */,
 				525446AD2256FF1C00AD2EE9 /* UIView.swift in Sources */,
 				5254469C2256FF1200AD2EE9 /* CGRect.swift in Sources */,

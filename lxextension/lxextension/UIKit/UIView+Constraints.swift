@@ -53,6 +53,17 @@ public extension UIView {
 public extension UIView {
     
     @discardableResult
+    func size(equal view: UIView) -> UIView {
+        widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        return self
+    }
+    
+}
+
+public extension UIView {
+    
+    @discardableResult
     func aspect(_ constant: CGFloat = 1.0) -> UIView {
         widthAnchor.constraint(equalTo: heightAnchor, multiplier: constant).isActive = true
         return self

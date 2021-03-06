@@ -314,6 +314,13 @@ public extension UIView {
     }
     
     @discardableResult
+    func fittingHeight(_ view: UIView) -> Self {
+        topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        return self
+    }
+    
+    @discardableResult
     func fittingSafeArea(_ view: UIView) -> UIView {
         topAnchor.constraint(equalTo: view.topSafeAreaAnchor).isActive = true
         leadingAnchor.constraint(equalTo: view.leadingSafeAreaAnchor).isActive = true

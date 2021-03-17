@@ -23,6 +23,18 @@ public enum ObjectSavableError: String, LocalizedError {
     }
 }
 
+public extension UserDefaults {
+    
+    func isExist(_ key: String) -> Bool {
+        return object(forKey: key) != nil
+    }
+    
+    func remove(_ key: String) {
+        removeObject(forKey: key)
+    }
+    
+}
+
 extension UserDefaults: ObjectSavable {
     
     public func setObject<Object>(_ object: Object, forKey: String) throws where Object: Encodable {

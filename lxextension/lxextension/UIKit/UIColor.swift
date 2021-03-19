@@ -45,7 +45,6 @@ public extension UIColor {
         }
         let hexFloat: CGFloat = CGFloat(hexComponent)
         let floatValue: CGFloat = CGFloat(hexFloat / 255.0)
-        print(floatValue)
         return floatValue
     }
     

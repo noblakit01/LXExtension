@@ -8,21 +8,25 @@
 
 import UIKit
 
-public class BaseView: UIView {
+open class BaseView: UIView {
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
     
         setUpViews()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         
         setUpViews()
     }
     
-    func setUpViews() {
+    convenience public init() {
+        self.init(frame: .zero)
+    }
+    
+    open func setUpViews() {
         
     }
     

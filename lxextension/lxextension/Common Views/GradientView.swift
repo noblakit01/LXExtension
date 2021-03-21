@@ -49,7 +49,7 @@ public class GradientView: BaseView {
         gradientLayer.frame = bounds
     }
     
-    override func setUpViews() {
+    public override func setUpViews() {
         super.setUpViews()
         
         translatesAutoresizingMaskIntoConstraints = false

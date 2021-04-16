@@ -19,7 +19,7 @@ extension UIScrollView {
     }
     
     public func scrollToRight(animated: Bool = true) {
-        let rightOffset = CGPoint(x: contentSize.width - bounds.size.width * 0.5, y: 0)
+        let rightOffset = CGPoint(x: contentSize.width - bounds.size.width, y: 0)
         setContentOffset(rightOffset, animated: animated)
     }
     

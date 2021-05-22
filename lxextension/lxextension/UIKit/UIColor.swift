@@ -32,6 +32,20 @@ public extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
     
+    convenience init?(rrbbgg hexString: String) {
+        var colorString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
+        colorString = colorString.replacingOccurrences(of: "#", with: "").uppercased()
+        guard colorString.count == 6 else {
+            return nil
+        }
+
+        let red: CGFloat = UIColor.colorComponentFrom(colorString: colorString, start: 0, length: 2)
+        let green: CGFloat = UIColor.colorComponentFrom(colorString: colorString, start: 2, length: 2)
+        let blue: CGFloat = UIColor.colorComponentFrom(colorString: colorString, start: 4, length: 2)
+        
+        self.init(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+    
     private static func colorComponentFrom(colorString: String, start: Int, length: Int) -> CGFloat {
         
         let startIndex = colorString.index(colorString.startIndex, offsetBy: start)

@@ -53,6 +53,17 @@ public extension UIView {
 public extension UIView {
     
     @discardableResult
+    func size(equal view: UIView) -> UIView {
+        widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        return self
+    }
+    
+}
+
+public extension UIView {
+    
+    @discardableResult
     func aspect(_ constant: CGFloat = 1.0) -> UIView {
         widthAnchor.constraint(equalTo: heightAnchor, multiplier: constant).isActive = true
         return self
@@ -134,6 +145,11 @@ public extension UIView {
     func leadingGreaterOrEqual(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> UIView {
         leadingAnchor.constraint(greaterThanOrEqualTo: anchor, constant: constant).isActive = true
         return self
+    }
+    
+    @discardableResult
+    func leadingSafeArea(_ view: UIView, constant: CGFloat = 0.0) -> Self {
+        return leading(view.leadingSafeAreaAnchor, constant: constant)
     }
     
     @discardableResult
@@ -301,6 +317,13 @@ public extension UIView {
     func fittingWidth(_ view: UIView) -> UIView {
         leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        return self
+    }
+    
+    @discardableResult
+    func fittingHeight(_ view: UIView) -> Self {
+        topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         return self
     }
     

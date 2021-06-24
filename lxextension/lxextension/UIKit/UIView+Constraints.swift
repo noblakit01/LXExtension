@@ -59,6 +59,13 @@ public extension UIView {
     }
     
     @discardableResult
+    func aspect(_ constant: CGFloat, constraint: inout NSLayoutConstraint?) -> UIView {
+        constraint = widthAnchor.constraint(equalTo: heightAnchor, multiplier: constant)
+        constraint!.isActive = true
+        return self
+    }
+    
+    @discardableResult
     func width(_ constant: CGFloat) -> UIView {
         widthAnchor.constraint(equalToConstant: constant).isActive = true
         return self

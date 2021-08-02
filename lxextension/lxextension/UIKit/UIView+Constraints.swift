@@ -142,6 +142,13 @@ public extension UIView {
     }
     
     @discardableResult
+    func leading(_ view: UIView, constraint: inout NSLayoutConstraint?, constant: CGFloat = 0.0) -> Self {
+        constraint = leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant)
+        constraint?.isActive = true
+        return self
+    }
+    
+    @discardableResult
     func leadingGreaterOrEqual(_ anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0.0) -> UIView {
         leadingAnchor.constraint(greaterThanOrEqualTo: anchor, constant: constant).isActive = true
         return self
@@ -161,6 +168,13 @@ public extension UIView {
     @discardableResult
     func trailing(_ view: UIView, constant: CGFloat = 0.0) -> Self {
         return trailing(view.trailingAnchor, constant: constant)
+    }
+    
+    @discardableResult
+    func trailing(_ view: UIView, constraint: inout NSLayoutConstraint?, constant: CGFloat = 0.0) -> Self {
+        constraint = trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: constant)
+        constraint?.isActive = true
+        return self
     }
     
     @discardableResult

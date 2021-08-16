@@ -20,5 +20,14 @@ public extension NSMutableAttributedString {
         return self
     }
     
+    func add(link: String, text: String, font: UIFont, color: UIColor) -> NSMutableAttributedString {
+        let attributes: [NSAttributedString.Key: Any] = [
+            .link: link,
+            .font: font
+        ]
+        self.append(NSAttributedString(string: text, attributes: attributes))
+        return self
+    }
+    
     
 }

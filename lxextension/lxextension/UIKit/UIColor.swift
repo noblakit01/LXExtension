@@ -72,4 +72,12 @@ public extension UIColor {
         return String(format: "#%02lX%02lX%02lX%02lX", lroundf(Float(a * 255)), lroundf(Float(r * 255)), lroundf(Float(g * 255)), lroundf(Float(b * 255)))
     }
     
+    static func random() -> UIColor {
+        let r = Int.random(in: 0...255)
+        let g = Int.random(in: 0...255)
+        let b = Int.random(in: 0...255)
+        
+        return UIColor(red: r, green: g, blue: b)
+    }
+    
 }

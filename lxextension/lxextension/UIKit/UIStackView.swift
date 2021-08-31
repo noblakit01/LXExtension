@@ -45,12 +45,21 @@ extension UIStackView {
     
 }
 
-extension UIStackView {
+public extension UIStackView {
     
     @discardableResult
-    public func margins(_ margins: UIEdgeInsets) -> UIStackView {
+    func margins(_ margins: UIEdgeInsets) -> UIStackView {
         layoutMargins = margins
         isLayoutMarginsRelativeArrangement = true
+        
+        return self
+    }
+    
+    @discardableResult
+    func removeAllSubviews() -> Self {
+        for view in subviews {
+            view.removeFromSuperview()
+        }
         
         return self
     }

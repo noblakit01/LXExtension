@@ -367,9 +367,9 @@ public extension UIView {
     }
     
     @discardableResult
-    func topRight(of view: UIView) -> UIView {
-        topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    func topRight(of view: UIView, constant: CGFloat = 0.0) -> UIView {
+        topAnchor.constraint(equalTo: view.topAnchor, constant: constant).isActive = true
+        rightAnchor.constraint(equalTo: view.rightAnchor, constant: -constant).isActive = true
         return self
     }
     

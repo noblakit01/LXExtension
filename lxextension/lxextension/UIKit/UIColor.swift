@@ -63,12 +63,39 @@ public extension UIColor {
     }
     
     var aarrbbgg: String {
-        let components = cgColor.components
-        let r: CGFloat = components?[0] ?? 1.0
-        let g: CGFloat = components?[1] ?? 1.0
-        let b: CGFloat = components?[2] ?? 1.0
-        let a: CGFloat = components?[3] ?? 1.0
-        
+        guard let components = cgColor.components else {
+            return "#FFFFFFFF"
+        }
+        let r: CGFloat
+        let g: CGFloat
+        let b: CGFloat
+        let a: CGFloat
+        switch components.count {
+        case 4:
+            r = components[0]
+            g = components[1]
+            b = components[2]
+            a = components[3]
+        case 3:
+            r = components[0]
+            g = components[1]
+            b = components[2]
+            a = 1.0
+        case 2:
+            let w = components[0]
+            r = w
+            g = w
+            b = w
+            a = components[1]
+        case 1:
+            let w = components[0]
+            r = w
+            g = w
+            b = w
+            a = 1.0
+        default:
+            return "#FFFFFFFF"
+        }
         return String(format: "#%02lX%02lX%02lX%02lX", lroundf(Float(a * 255)), lroundf(Float(r * 255)), lroundf(Float(g * 255)), lroundf(Float(b * 255)))
     }
     
